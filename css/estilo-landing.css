@@ -1,0 +1,274 @@
+/*
+* color gti---> (130, 0, 83, 0.99)
+* Comienza fondo general------------------
+*/
+
+body{
+    background: rgb(238, 255, 210);
+    margin: 0px;
+}
+#movil{
+    display:flex;
+    flex-direction: column;
+    width: 414px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding: 0px;
+    text-align: center;
+}
+
+/*
+* Fin fondo general------------------
+*/
+
+/*
+* Comienzo parte1------------------
+*/
+
+#espacio{
+    width: 414px;
+    height: 73px;
+}
+
+#pag-principal{
+    height:790px;
+    background-image:url("../images/fondo-paginaprincipal-parte1.png");
+    background-position: center;
+    background-position: bottom;
+    text-align: center;
+}
+.pag-principal h1{
+    color: white;
+    font-size: 40px;
+    height: 135px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-shadow: 1px solid black;
+    font-family: "Garamond Negrita", "Garamond Normal", "Garamond", sans-serif;
+}
+.pag-principal h2{
+    color: white;
+    font-size: 25px;
+    height: 100px;
+    padding: 20px;
+    margin: 0 auto;
+    text-shadow: 1px solid black;
+    font-family: "Garamond Negrita", "Garamond Normal", "Garamond", sans-serif;
+}
+.boton-contratar{
+    background-color:rgb(130, 0, 83, 0.99);
+    color:white;
+    border:1px solid black;
+    width: 145px;
+    height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    line-height:0px;
+    border: none;
+    font-size: 15px;
+}
+.boton-contratar:active{
+    background-color:rgba(87, 10, 59, 0.99);
+    border:1px solid gray;
+}
+
+#espacio-boton{
+    height: 100px;
+    padding-top: 40%;
+    padding-bottom: 20%;
+}
+#espacio-descubrir{
+    height: 50px;
+    padding: 0px;
+    margin:0px;
+}
+#descubrir-mas{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+#descubrir-mas-img{
+    width: 50px;
+    height: 25px;
+}
+
+/*
+* Fin parte1------------------
+*/
+
+/*
+* Comienzo de Sobre Nosotros------------------
+*/
+.pag-sobreNosotros{
+    height: 720px;
+    max-height: 720px;
+    background-image:url("../images/fondosobrenosotros.png");
+    color:white;
+    width: 414px;
+    max-width: 414px;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap:10px;
+    font-family: "Arial Normal", "Arial", sans-serif;
+}
+#sobrenosotros-titulo{
+    width: 414px;
+    height: 60px;
+    font-size: 18px;
+}
+#sobrenosotrosdiv{
+    display:flex;
+    width: 370px;
+    height: 160px;
+    padding: 5%;
+    flex-direction: row;
+    align-items: center;
+}
+.sobrenosotros-img{
+    width: 100px;
+    height: 100px;
+}
+
+.sobrenosotros-info p{
+    font-size: 15px;
+}
+.sobrenosotros-info h3{
+    font-size: 18px;
+}
+
+#quiensomos-info{
+    text-align: right;
+}
+#quevendemos-info{
+    text-align: left;
+}
+#porquelagente-info{
+    text-align: right;
+}
+
+/*
+* Fin Sobre Nosotros------------------
+*/
+
+/*
+* Comienzo de Servicios------------------
+*/
+
+.Servicios{
+    background-image: url("../images/fondoSERVICIOS.png");
+    background-size:cover;
+    height:790px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#titulo{
+    font-family: "Arial Normal", "Arial", sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color:gray;
+}
+
+#fondo-servicios{
+    display:flex;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 5px;
+    height: 10%;
+    width: 100%;
+    padding: 0px;
+    margin:0px;
+}
+
+.sensor-imagen{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin:0px;
+}
+.sensor-info{
+    width: 80%;
+    height: 100%;
+    margin:0px;
+    padding: 0px;
+    text-align: start;
+}
+
+.sensor-info h3{
+    margin:2px;
+    margin-left: 7px;
+    padding: 0px;
+    font-size: 15px;
+    font-family: "Arial Normal", "Arial", sans-serif;
+}
+.sensor-info p{
+    margin:2px;
+    margin-left: 5px;
+    padding: 0px;
+    font-size: 15px;
+    font-family: "Arial Normal", "Arial", sans-serif;
+}
+
+/*
+* Fin Servicios------------------
+*/
+
+/*
+* Comienzo abajo ------------------
+*/
+
+.abajo{
+    background-color: rgb(130, 0, 83, 0.99);
+    display:flex;
+    justify-content:flex-start;
+    gap:15px;
+    flex-direction: column;
+    width: 414px;
+    height: 130px;
+    color:white;
+}
+#derechos{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    font-family: "Arial Normal", "Arial", sans-serif;
+    font-size: 15px;
+}
+
+#imagen-copyright{
+    margin-top: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+#redessociales{
+    height: 60px;
+    display:flex;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+}
+#img-redsocial{
+    width: 50px;
+    height: 50px;
+}
+#img-redsocialInsta{
+    width: 55px;
+    height: 55px;
+}
+
+/*
+* Fin abajo------------------
+*/

@@ -1,0 +1,135 @@
+/*
+* Comienza fondo general------------------
+*/
+
+body{
+    background: rgb(238, 255, 210);
+    margin: 0px;
+}
+#movil{
+    display:flex;
+    flex-direction: column;
+    width: 414px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding: 0px;
+    text-align: center;
+}
+
+
+.login{
+    display:flex;
+    width: 414px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+
+}
+#pag-login-part1{
+    height:720px;
+    width: 414px;
+    background-image:url("../images/imagen_difuminada_blanca.jpg");
+    background-position: center;
+    text-align: center;
+
+}
+/*
+* Fin fondo general------------------
+*/
+
+#cuadro{
+    height:520px;
+    width:300px;
+    margin-top: 110px;
+    margin-left: 57px;
+    margin-right: 57px;
+    background-color: #ffffff;
+    border-radius:5px;
+    padding-top: 15px;
+
+}
+#titulo{
+    margin-top: 20px;
+    color: #820053;
+    font-size: 200%;
+}
+#usuario-t{
+    margin-right: 195px;
+    margin-bottom: 20px;
+}
+#contraseña-t{
+    margin-right: 172px;
+    margin-bottom: 20px;
+}
+
+.pag-login-part1 input[type="text"] {
+    width:240px;
+    line-height:40px;
+    border-radius:5px;
+    border:1px solid #000000;
+    outline:none;
+    padding-left:10px;
+  }
+
+  .pag-login-part1 input[type="password"] {
+    width:240px;
+    line-height:40px;
+    margin-bottom: 20px;
+    border-radius:5px;
+    border:1px solid #000000;
+    outline:none;
+    padding-left:10px;
+  }
+
+#hasolvidado{
+    margin-right: 5px;
+    font-size: 80%;
+    display: inline;
+}
+#contactanos{
+    margin-right: 20px;
+    font-size: 80%;
+    display: inline;
+}
+#recordar{
+    margin-right: 60px;
+    font-size: 80%;
+    display: inline;
+}
+/*
+* Inicio botones------------------
+*/
+.boton-aceptar[type="button"]{
+    height:50px;
+    width:150px;
+    margin-top: 20px;
+    background:rgb(130, 0, 83, 0.99);
+    border:1px solid #000000;
+    color: #ffffff;
+    border-radius:5px;
+}
+.boton-atras[type="button"]{
+    height:50px;
+    width:150px;
+    background:#ffffff;
+    border:1px solid #000000;
+    color: rgb(130, 0, 83, 0.99);
+    border-radius:5px;
+    margin-top: 20px;
+}
+
+.boton-aceptar:hover{
+    background-color:rgba(87, 10, 59, 0.99);
+    border:1px solid gray;
+}
+.boton-atras:hover{
+    background-color:rgb(236, 236, 236);
+    border:1px solid gray;
+}
+/*
+* Fin botones------------------
+*/
