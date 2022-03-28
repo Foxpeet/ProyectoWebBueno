@@ -13,76 +13,79 @@
 </head>
 
 <body>
-    <div id="movil">
+    <SCRIPT language=Javascript>
+        function go(){
+            if (document.form.password.value=="1234" && document.form.login.value=="user"){
+                document.form.submit();
+            }
+            else{
+                alert("La contraseña no coincide con el usuario");
+            }
+        }
+    </SCRIPT>
     <!-- seccion de comienzo-->
-        <section class="comienzo">
-            <header class="encabezado" role="banner">
-                <a href="index.html" id="logo">
-                    <img src="images/LogoGTI.png" alt="logo de GTI" id="logo">
+    <section class="comienzo">
+        <header class="encabezado" role="banner">
+            <a href="index.html" id="logo">
+                <img src="images/LogoGTI.png" alt="logo de GTI" id="logo">
+            </a>
+            <div id="login-y-menu">
+                <a href="login.html" id="login">
+                    <img src="images/iniciar_sesion.png" id="login">
                 </a>
-                <div id="login-y-menu">
-                    <!-- aquí va el menu desplegable-->
-                    <div class="respmenu" id="menu">
-                        <img src="images/menu-hamburger.svg" id="menu">
-                        <input type="checkbox">
-                        <i class="fas fa-bars"></i>
-                        <i class="fas fa-times"></i>
-                        <nav>
-                            <ul>
-                                <li><a href="index.html">Sobre Nosotros</a></li>
-                                <li><a href="index.html">Servicios</a></li>
-                                <!--<li><a href="#">Contacto</a></li>-->
-                            </ul>
-                        </nav>
-                    </div>
+                <!-- aquí va el menu desplegable-->
+                <div class="respmenu" id="menu">
+                    <img src="images/menu-hamburger.svg" id="menu">
+                    <input type="checkbox">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Sobre Nosotros</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </header>
+            </div>
+        </header>
 
-            <section class="login">
-                <div class="pag-login-part1" id="pag-login-part1">
-                    <div id="cuadro">
-                        <!-- imagen del fondo del login-->
-                        <p id="titulo">Iniciar sesión</p>
-                        <section>
-                            <p id="usuario-t">Usuario</p>
-                            <input type="text" placeholder="Usuario">
+        <section class="login">
+            <div class="pag-login-part1" id="pag-login-part1">
+                <div id="cuadro">
+                    <!-- imagen del fondo del login-->
+                    <p id="titulo">Iniciar sesión</p>
+                    <FORM name=form action="TU_PAGINA_WEB.HTML">
 
-                        </section>
-
-                        <section>
-                            <p id="contraseña-t">Contraseña</p>
-                            <input type="password" placeholder="Contraseña">
-
-                        </section>
-                        <section>
-                            <p id="hasolvidado">¿Has olvidado tu contraseña?</p>
-                            <a href="#">
-                                <p id="contactanos">Contactanos</p>
-                            </a>
-                        </section>
-
-                        <section>
-                            <input type="checkbox"><p id="recordar">Recordar mi usuario y contraseña</p>
-
-                        </section>
-
-                        <section>
-                            <a href="index.html">
-                                <button type="button" class="boton-aceptar"> ACEPTAR</button>
-                            </a>
-                        </section>
-
-                        <section>
-
-                            <a href="index.html">
-                                <button type="button" class="boton-atras"> ATRAS</button>
-                            </a>
-
-                        </section>
-                    </div>
+                        <p id="usuario-t">Usuario</p>    <INPUT type=text name=login> 
+                        <p id="contraseña-t">Contraseña</p> <INPUT type=password name=password> 
+                        
+                            <section>
+                                <p id="hasolvidado">¿Has olvidado tu contraseña?</p>
+                                <a href="#">
+                                    <p id="contactanos">Contactanos</p>
+                                </a>
+                            </section>
+        
+                            <section>
+                                <input type="checkbox"><p id="recordar">Recordar mi usuario y contraseña</p>
+        
+                            </section>
+                            <INPUT onclick=go() type=button value=Acceder class=boton-aceptar>
+                                <section>
+                                    <a href="index.html">
+                                        <button type="button" class="boton-atras"> ATRAS</button>
+                                    </a>
+                                </section>
+                        </FORM> 
                 </div>
+
+
+            </div>
+            
+
+
         </section>
-    </div>
 </body>
 
 </html>
