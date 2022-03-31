@@ -103,7 +103,7 @@ body{
 /*
 * Inicio botones------------------
 */
-.boton-aceptar[type="button"]{
+.boton-aceptar[type="submit"]{
     height:50px;
     width:150px;
     margin-top: 20px;
