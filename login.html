@@ -43,21 +43,23 @@
                     <div id="cuadro">
                         <!-- imagen del fondo del login-->
                         <p id="titulo">Iniciar sesión</p>
+                     <form onsubmit="enviarLogin(event)">
+
                         <section>
                             <p id="usuario-t">Usuario</p>
-                            <input type="text" placeholder="Usuario">
+                            <input id="usuario" type="text" placeholder="Introduzca su usuario" required> <br>
 
                         </section>
 
                         <section>
                             <p id="contraseña-t">Contraseña</p>
-                            <input type="password" placeholder="Contraseña">
+                            <input id="contraseña" type="password" placeholder="Introduzca su contraseña" required> <br>
 
                         </section>
                         <section>
                             <p id="hasolvidado">¿Has olvidado tu contraseña?</p>
                             <a href="#">
-                                <p id="contactanos">Contactanos</p>
+                                <p id="contactanos">Contáctanos</p>
                             </a>
                         </section>
 
@@ -69,7 +71,7 @@
 
                         <section>
                             <a href="#">
-                                <button type="button" class="boton-aceptar"> ACEPTAR</button>
+                                <button type="submit" class="boton-aceptar"> ACEPTAR</button>
                             </a>
                         </section>
 
@@ -80,10 +82,13 @@
                             </a>
 
                         </section>
+                     </form>
+
                     </div>
                 </div>
             </section>
     </div>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
