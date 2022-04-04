@@ -9,7 +9,7 @@ html{
   list-style: none;
   display: flex;
   background-color: white;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 414px;
@@ -34,11 +34,10 @@ html{
   height: 44px;
   display: flex;
   flex-wrap: wrap;
-  justify-content:flex-end;
 }
 #login-y-menu{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   height: max-content;
   display: flex;
   justify-content: flex-end;
