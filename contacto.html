@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTI||Grado en Tecnologias Interactivas</title>
+    
+    <link href="css/estilo-landing.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo-cabecera.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div id="movil">
+        <!-- seccion de encabezado-->
+        <section class="comienzo">
+            <header class="encabezado" role="banner">
+                <a href="#pag-principal" id="logo">
+                    <img src="images/LogoGTI.png" alt="logo de GTI" id="logo">
+                </a>
+                <div id="login-y-menu">
+                    <a href="login.html" id="login">
+                        <img src="images/iniciar_sesion.png" id="login">
+                    </a>
+                    <!-- aquí va el menu desplegable-->
+                    <div class="respmenu" id="menu">
+                        <img src="images/menu-hamburger.svg" id="menu">
+                        <input type="checkbox">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                        <nav>
+                            <ul>
+                                <li><a href="#espacio-descubrir">Sobre Nosotros</a></li>
+                                <li><a href="#porquelagente-img">Servicios</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- fin de encabezado -->
+
+            <section class="contacto">
+                <div class="pag-contacto-part1" id="pag-contacto-part1">
+                    <div id="cuadro">
+                        <!-- imagen del fondo del login-->
+                        <p id="titulo">CONTACTO</p>
+                    <form onsubmit="enviarCONTACTO(event)">
+
+                        <section>
+                            <h3 id="nombre">Nombre*</h3>
+                            <input id="NOMBRE" type="text" placeholder="Introduzca su nombre" required> <br>
+                            
+
+                        </section>
+
+                        <section>
+                            <h3 id="nombre">Apellidos*</h3>
+                            <input id="apellidos" type="text" placeholder="Introduzca su apellido" required> <br>
+
+                        </section>
+                       
+                        <section>
+                            <h3 id="nombre">Correo eletrónico*</h3>
+                            <input id="correo electrónico" type="email" placeholder="Introduzca su correo electrónico" required> <br>
+
+                        </section>
+                       
+                        <section>
+                            <h3 id="nombre">Número de teléfono</h3>
+                            <input id="numero de telefono" type="number" placeholder="Introduzca su número de teléfono" required> <br>
+
+                        </section>
+
+                        <section>
+                            <h3 id="nombre">Asunto*</h3>
+                            <input id="asunto" type="text" placeholder="Introduzca su asunto" required> <br>
+
+                        </section>
+
+                        <section>
+                            <h3 id="nombre">Mensaje*</h3>
+                            <input id="mensaje" type="text" placeholder="Introduzca su mensaje" required> <br>
+
+                        </section>
+
+                        <section>
+                            <a href="#">
+                                <button type="submit" class="boton-aceptar"> ACEPTAR</button>
+                            </a>
+                        </section>
+
+                        <section>
+
+                            <a href="index.html">
+                                <button type="button" class="boton-atras"> ATRAS</button>
+                            </a>
+
+                        </section>
+                    </form>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
