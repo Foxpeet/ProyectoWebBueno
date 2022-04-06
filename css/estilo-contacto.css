@@ -1,0 +1,103 @@
+/*COMIENZA FONDO GENERAL*/
+body{
+    background: rgb(238, 255, 210);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#movil{
+    display:flex;
+    flex-direction: column;
+    width: 414px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding: 0px;
+    text-align: center;
+}
+
+.contacto{
+    display:flex;
+    width: 414px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+
+#pag-contacto-part1{
+    height:720px;
+    width: 414px;
+    text-align: center;
+
+}
+/*FIN FONDO GENERAL*/
+
+#titulo{
+    margin-top: 100px;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#nombre{
+    text-align: left;
+    margin-left: 21px;
+    font-size: 16px;
+    font-style: normal;
+}
+
+#NOMBRE,
+#apellidos, 
+#correoelectronico, 
+#numeroDeTelefono, 
+#asunto, 
+#mensaje{
+    width:240px; 
+    padding-right: 100px;
+    margin-right: 21px;
+    padding-left: 5px;
+    
+    line-height: 20px;
+    border: 0,5px solid #000000;
+      
+}
+
+#mensaje{
+    line-height:100px;
+}
+
+/*INICIO BOTONES*/
+
+.boton-aceptar[type="submit"]{
+    height:50px;
+    width:150px;
+    margin-top: 50px;
+    background:rgb(130, 0, 83, 0.99);
+    border:1px solid #000000;
+    color: #ffffff;
+    border-radius:5px;
+}
+.boton-atras[type="button"]{
+    height:50px;
+    width:150px;
+    background:#ffffff;
+    border:1px solid #000000;
+    color: rgb(130, 0, 83, 0.99);
+    border-radius:5px;
+    margin-top: 20px;
+}
+
+.boton-aceptar:hover{
+    background-color:rgba(87, 10, 59, 0.99);
+    border:1px solid gray;
+}
+.boton-atras:hover{
+    background-color:rgb(236, 236, 236);
+    border:1px solid gray;
+}
+
+/*FIN BOTONES*/
