@@ -27,7 +27,7 @@ body{
     background-color: whitesmoke;
 }
 
-#contactodiv{
+#pag-contacto-part1{
     height:720px;
     width: 414px;
     text-align: center;
@@ -112,3 +112,55 @@ body{
 }
 
 /*FIN BOTONES*/
+
+/*
+* Comienzo footer ------------------
+*/
+
+.footer{
+    background-color: rgb(130, 0, 83, 0.99);
+    display:flex;
+    justify-content:flex-start;
+    gap:15px;
+    flex-direction: column;
+    width: 414px;
+    height: 130px;
+    color:white;
+}
+#derechos{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    font-family: "Arial Normal", "Arial", sans-serif;
+    font-size: 15px;
+}
+
+#imagen-copyright{
+    margin-top: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+#redessociales{
+    height: 60px;
+    display:flex;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+}
+#img-redsocial{
+    width: 60px;
+    height: 60px;
+}
+#img-redsocialInsta{
+    width: 70px;
+    height: 70px;
+}
+
+/*
+* Fin footer------------------
+*/
