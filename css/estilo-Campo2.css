@@ -1,0 +1,156 @@
+body{
+    background: rgb(238, 255, 210);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#movil{
+    display:flex;
+    flex-direction: column;
+    width: 414px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding: 0px;
+    text-align: center;
+}
+.Campo1{
+    display:flex;
+    width: 414px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+
+}
+
+#pag-campo-part1{
+    height:720px;
+    width: 414px;
+    background-image:url("../images/img_Campo1/fondo_userPage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+
+}
+/*
+* Fin fondo general------------------
+*/
+
+/*
+* Comienzo datos sensores ------------------
+*/
+
+#cuadro{
+    height:500px;
+    width:366px;
+    margin-top: 140px;
+    margin-left: 25px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border-radius:5px;
+    padding-top: 15px;
+
+}
+#titulo{
+    margin-top: -40px;
+    margin-right: 0px;
+    color: #820053;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Campo1 .pag-campo-part1 .haciaAtras{
+    height:50px;
+    width:50px;
+    background:rgb(130, 0, 83, 0.99);
+    border:1px solid #000000;
+    color: white;
+    border-radius:0px;
+    margin-top: -12px;
+    margin-right: -310px;
+    font-size: 170%;
+}
+.Campo1 .pag-campo-part1 .haciaAtras:hover{
+    background-color:rgba(87, 10, 59, 0.99);
+    border:1px solid gray;
+}
+
+#datosSensores{
+    width: 325px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#GPS{
+    margin-top: 75px;
+    margin-left: -253px;
+    color: black;
+    font-size: 140%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mapa{
+    margin-top: -125px;
+    margin-right: -150px;
+}
+
+/*
+* Fin datos sensores ------------------
+*/
+
+
+/*
+* Comienzo abajo ------------------
+*/
+
+.abajo{
+    background-color: rgb(130, 0, 83, 0.99);
+    display:flex;
+    justify-content:flex-start;
+    gap:15px;
+    flex-direction: column;
+    width: 414px;
+    height: 130px;
+    color:white;
+}
+#derechos{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    font-family: "Arial Normal", "Arial", sans-serif;
+    font-size: 15px;
+}
+
+#imagen-copyright{
+    margin-top: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+#redessociales{
+    height: 60px;
+    display:flex;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+}
+#img-redsocial{
+    width: 50px;
+    height: 50px;
+}
+#img-redsocialInsta{
+    width: 55px;
+    height: 55px;
+}
+
+/*
+* Fin abajo------------------
+*/
