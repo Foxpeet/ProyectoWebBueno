@@ -43,13 +43,13 @@
                 <div id="cuadro">
                     <!-- imagen del fondo del login-->
                     <p id="titulo">Iniciar sesión</p>
-                    <form onsubmit="enviarLogin(event)">
+                    <form action="login.php" method="post">
                         <section>   
-                            <input id="usuario" type="text" placeholder="Introduzca su usuario" required> <br>
+                            <input id="usuario" type="text" placeholder="Introduzca su usuario" name="login" required> <br>
                         </section>
 
                         <section>
-                            <input id="contraseña" type="password" placeholder="Introduzca su contraseña" required> <br>
+                            <input id="contraseña" type="password" placeholder="Introduzca su contraseña" name="passw" required> <br>
                         </section>
 
                         <section>
