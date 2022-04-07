@@ -14,7 +14,7 @@ function enviarLogin() {
         return respuesta.json()
     }).then(function (datos) {
         console.log(datos.nombre)
-        location.href = "app/test-formulario.html"
+        location.href = "app/userPage.html"
     }).catch(function () {
         console.log("Datos incorrectos")
     })
