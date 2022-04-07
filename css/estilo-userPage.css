@@ -1,0 +1,107 @@
+body{
+    background: rgb(238, 255, 210);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#movil{
+    display:flex;
+    flex-direction: column;
+    width: 414px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding: 0px;
+    text-align: center;
+}
+
+.userPage{
+    display:flex;
+    width: 414px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+
+}
+#cuadro{
+    height:0px;
+    width:300px;
+    margin-top: 100px;
+    margin-left: 57px;
+    margin-right: 57px;
+    border-radius:5px;
+    padding-top: 15px;
+
+}
+#titulo{
+   justify-content: center;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    
+}
+
+#pag_userPage1{
+    height:720px;
+    width: 414px;
+    background-image:url("../images/img_Campo1/fondo_userPage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+
+}
+
+/*
+* Comienzo abajo ------------------
+*/
+
+.abajo{
+    background-color: rgb(130, 0, 83, 0.99);
+    display:flex;
+    justify-content:flex-start;
+    gap:15px;
+    flex-direction: column;
+    width: 414px;
+    height: 130px;
+    color:white;
+}
+#derechos{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    font-family: "Arial Normal", "Arial", sans-serif;
+    font-size: 15px;
+}
+
+#imagen-copyright{
+    margin-top: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+#redessociales{
+    height: 60px;
+    display:flex;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+}
+#img-redsocial{
+    width: 50px;
+    height: 50px;
+}
+#img-redsocialInsta{
+    width: 55px;
+    height: 55px;
+}
+
+/*
+* Fin abajo------------------
+*/
