@@ -15,7 +15,7 @@
 <body>
     <div id="movil">
         <!-- seccion de comienzo-->
-        <section class="comienzo">
+        <section class="cabecera">
             <header class="encabezado" role="banner">
                 <a href="index.html" id="logo">
                     <img src="images/LogoGTI.png" alt="logo de GTI" id="logo">
@@ -37,25 +37,21 @@
                     </div>
                 </div>
             </header>
-
-            <section class="login">
-                <div class="pag-login-part1" id="pag-login-part1">
-                    <div id="cuadro">
-                        <!-- imagen del fondo del login-->
-                        <p id="titulo">Iniciar sesión</p>
-                     <form onsubmit="enviarLogin(event)">
-
-                        <section>
-                            
+        </section>
+        <section class="login">
+            <div class="pag-login-part1" id="pag-login-part1">
+                <div id="cuadro">
+                    <!-- imagen del fondo del login-->
+                    <p id="titulo">Iniciar sesión</p>
+                    <form onsubmit="enviarLogin(event)">
+                        <section>   
                             <input id="usuario" type="text" placeholder="Introduzca su usuario" required> <br>
-
                         </section>
 
                         <section>
-                          
                             <input id="contraseña" type="password" placeholder="Introduzca su contraseña" required> <br>
-
                         </section>
+
                         <section>
                             <p id="hasolvidado">¿Has olvidado tu contraseña?</p>
                             <a href="#">
@@ -66,13 +62,11 @@
                         <section>
                             <input type="checkbox">
                             <p id="recordar">Recordar mi usuario y contraseña</p>
-
                         </section>
-                         
-                         <section>
+                            
+                        <section>
                             <input type="checkbox" required>
                             <p id="aceptarCondiciones">Acepto las condiciones</p>
-
                         </section>
 
                         <section>
@@ -82,17 +76,14 @@
                         </section>
 
                         <section>
-
                             <a href="index.html">
                                 <button type="button" class="boton-atras"> ATRAS</button>
                             </a>
-
                         </section>
-                     </form>
-
-                    </div>
+                    </form>
                 </div>
-            </section>
+            </div>
+        </section>
     </div>
     <script src="js/login.js"></script>
 </body>

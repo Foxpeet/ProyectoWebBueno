@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTI || HOME</title>
+    <title>GTI || Empresa de sensores</title>
     
     <link href="css/estilo-landing.css" rel="stylesheet" type="text/css">
     <link href="css/estilo-cabecera.css" rel="stylesheet" type="text/css">
@@ -12,95 +12,95 @@
 </head>
 <body>
     <div id="movil">
-        <!-- seccion de encabezado-->
-        <section class="comienzo">
+        <!-- seccion de cabecera-->
+        <section class="cabecera">
             <header class="encabezado" role="banner">
                 <a href="#pag-principal" id="logo">
                     <img src="images/LogoGTI.png" alt="logo de GTI" id="logo">
                 </a>
                 <div id="login-y-menu">
                     <a href="login.html" id="login">
-                        <img src="images/iniciar_sesion.png" id="login">
+                        <img src="images/iniciar_sesion.png"  alt="Iniciar Sesion" id="login">
                     </a>
                     <!-- aquí va el menu desplegable-->
                     <div class="respmenu" id="menu">
-                        <img src="images/menu-hamburger.svg" id="menu">
+                        <img src="images/menu-hamburger.svg" alt="Icono del menu Hambuerguesa" id="menu">
                         <input type="checkbox">
                         <i class="fas fa-bars"></i>
                         <i class="fas fa-times"></i>
-                        <nav>
+                        <nav> 
                             <ul>
                                 <li><a href="#espacio-descubrir">Sobre Nosotros</a></li>
                                 <li><a href="#porquelagente-img">Servicios</a></li>
-                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#espacio-boton">Contacto</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </header>
-
-            <div class="pag-principal" id="pag-principal">
-                <div id="espacio"></div>
-                <section>
-                    <h1>MONITORIZA<br>TUS<br>CULTIVOS</h1>
-                    <h2 id="subtitulo">Saca el máximo partido a tus cultivos</h2>
-                </section>
-                <div id="espacio-boton">
-                    <button type="button" class="boton-contratar"> Contratar </button>
-                </div>
-                <div id="espacio-descubrir">
-                    <a href="#espacio-descubrir">
-                        <p id="descubrir-mas">DESCUBRIR MAS</p>
-                        <img src="images/ArrowDown.jpg" id="descubrir-mas-img">
-                    </a>
-                </div>
-                
-            </div>
-            <!-- fin de encabezado -->
         </section>
+        <!-- fin de encabezado -->
+    
+        <div class="principal" id="principal" role="main">
+            <div id="espacio"></div>
+            <section>
+                <h1>MONITORIZA<br>TUS<br>CULTIVOS</h1>
+                <h2 id="subtitulo">Saca el máximo partido a tus cultivos</h2>
+            </section>
+            <div id="espacio-boton">
+                <a href="contacto.html">
+                    <button type="button" class="boton-contactar"> Contactar </button>
+                </a>
+            </div>
+            <div id="espacio-descubrir">
+                <a href="#descubrir-mas1">
+                    <p id="descubrir-mas1">DESCUBRIR MAS</p>
+                    <img src="images/ArrowDown.jpg" alt="Flecha Abajo" id="descubrir-mas-img">
+                </a>
+            </div>       
+        </div>
+        
     <!-- comienzo sobre nosotros-->
 
-        <div class="pag-sobreNosotros" id="pag-sobreNosotros">
+        <div class="sobreNosotros" id="sobreNosotros">
             <div id="sobrenosotros-titulo">
                 <h2>SOBRE NOSOTROS</h2>
             </div>
             <!-- QUINES SOMOS -->
-            <div id="sobrenosotrosdiv">
-                <section class="sobrenosotros-info" id="quiensomos-info">
-                    <h3>¿QUIENES SOMOS? </h3>
-                    <p>Somos una empresa creada recientemente, con origen
-                        en España. Pretendemos ofrecer a nuestros clientes seguridad y facilidad
-                        para sus cultivos gracias a nuestros sensores de última generación.
-                    </p>
-                </section>
-                <img src="images/people.png" alt="imagen de grupo de personas" class="sobrenosotros-img" id="quiensomos-img">
+            <div id="sobrenosotrosdiv quienessomos" class="sobrenosotros-info"> 
+                <h3>¿QUIENES SOMOS? </h3>
+                <img src="images/equipo.png" alt="imagen de grupo de personas" class="sobrenosotros-img" id="quiensomos-img">
+                <p>Somos una empresa creada recientemente, con origen
+                    en España. Pretendemos ofrecer a nuestros clientes seguridad y facilidad
+                    para sus cultivos gracias a nuestros sensores de última generación.
+                </p>
             </div>
             
             <!-- QUE VENDEMOS -->
-            <div id="sobrenosotrosdiv">
-                <img src="images/hand.png" alt="imagen de mano con dinero" class="sobrenosotros-img" id="quevendemos-img">
-                <section class="sobrenosotros-info" id="quevendemos-info">
-                    <h3>¿QUE VENDEMOS?</h3>
-                    <p>Disponemos de varios artículos de monitorización
-                        de cultivos. Estos sensores pueden estar personalizados al gusto del cliente.
-                    </p>
-                </section>
+            <div id="sobrenosotrosdiv" class="sobrenosotros-info">
+                <h3>¿QUE VENDEMOS?</h3>
+                <img src="images/save-money.png" alt="imagen de mano con dinero" class="sobrenosotros-img" id="quevendemos-img">
+                <p>Disponemos de varios artículos de monitorización
+                    de cultivos. Estos sensores pueden estar personalizados al gusto del cliente.
+                </p>
             </div>
 
             <!-- por qué la gente confia en nosotros?-->
-            <div id="sobrenosotrosdiv">
-                <section class="sobrenosotros-info" id="porquelagente-info">
-                    <h3>¿POR QUÉ LA GENTE CONFÍA EN NOSOTROS?</h3>
-                    <p>GTI ofrece un trato personalizado desde que el cliente
-                        contacta con nosotros hasta que los sensores son instalados. Nuestra atención
-                        hacia el cliente es máximo para cubiri todas las necesidades que pueda tener.
-                    </p>
-                </section>
+            <div id="sobrenosotrosdiv" class="sobrenosotros-info">
+                <h3>¿POR QUÉ LA GENTE CONFÍA EN NOSOTROS?</h3>
                 <img src="images/trust.png" alt="imagen de darse la mano no peleen" class="sobrenosotros-img" id="porquelagente-img">
+                <p>GTI ofrece un trato personalizado desde que el cliente
+                    contacta con nosotros hasta que los sensores son instalados. Nuestra atención
+                    hacia el cliente es máximo para cubiri todas las necesidades que pueda tener.
+                </p>
+            </div>
+            <div id="espacio-descubrir">
+                <a href="#descubrir-mas2">
+                    <p id="descubrir-mas2">DESCUBRIR MAS</p>
+                    <img src="images/ArrowDown.jpg" alt="Flecha Abajo" id="descubrir-mas-img">
+                </a>
             </div>
         </div>
-
-
 
     <!-- final sobre nosotros -->
     <!-- comienzo servicios -->
@@ -109,83 +109,71 @@
                 <h2>SERVICIOS</h2>
             </div>
 
-            <article id="fondo-servicios">
-                <div>
-                    <img src="images/humedad.png" class="sensor-imagen">
+            <article id="targetaservicios">
+                <h3>Humedad</h3>
+                <div id="sensor-imagendiv">
+                    <img src="images/sensorHumedad.png" alt="Sensor de Humedad" class="sensor-imagen">
                 </div>
-                <div class="sensor-info">
-                    <h3>Humedad</h3>
-                    <p>Podrás medir la humedad de tus cultivos gracias a nuestro sensor de humedad.</p>
-                </div>
+                <p>Podrás medir la humedad de tus cultivos gracias a nuestro sensor de humedad.</p>
             </article>
 
-            <article id="fondo-servicios">
-                <div>
-                    <img src="images/salinidad.png" class="sensor-imagen">
+            <article id="targetaservicios">
+                <h3>Salinidad</h3>
+                <div id="sensor-imagendiv">
+                    <img src="images/sensorSalinidad.png" alt="Sensor de Salinidad" class="sensor-imagen">
                 </div>
-                <div class="sensor-info">
-                    <h3>Salinidad</h3>
-                    <p>Toma medidas de la salinidad de la tierra mediante el sensor de salinidad.</p>
-                </div>
+                <p>Toma medidas de la salinidad de la tierra mediante el sensor de salinidad.</p>
             </article>
 
-            <article id="fondo-servicios">
-                <div >
-                    <img src="images/temperatura.png" class="sensor-imagen">
+            <article id="targetaservicios">
+                <h3>Temperatura</h3>
+                <div id="sensor-imagendiv">
+                    <img src="images/sensorTemperatura.png" alt="Sensor de Temperatura" class="sensor-imagen">
                 </div>
-                <div class="sensor-info">
-                    <h3>Temperatura</h3>
-                    <p>Mide la temperatura del agua con nuestro sensor de temperatura.</p>
-                </div>
+                <p>Mide la temperatura del agua con nuestro sensor de temperatura.</p>
             </article>
 
-            <article id="fondo-servicios">
-                <div>
-                    <img src="images/iluminacion.png" class="sensor-imagen">
+            <article id="targetaservicios">
+                <h3>Iluminacion</h3>
+                <div id="sensor-imagendiv">
+                    <img src="images/sensorIluminacion.png" alt="Sensor de Iluminacion" class="sensor-imagen">
                 </div>
-                <div class="sensor-info">
-                    <h3>Iluminacion</h3>
-                    <p>Obtén el porcentaje de luz que reciben tus cultivos.</p>
-                </div>
+                <p>Obtén el porcentaje de luz que reciben tus cultivos.</p>
             </article>
 
-            <article id="fondo-servicios">
-                <div>
-                    <img src="images/gps.png" class="sensor-imagen">
+            <article id="targetaservicios">
+                <h3>GPS</h3>
+                <div id="sensor-imagendiv">
+                    <img src="images/sensorGPS.png" alt="Sensor GPS" class="sensor-imagen">
                 </div>
-                <div class="sensor-info">
-                    <h3>GPS</h3>
-                    <p>Gracias a nuestro sensor GPS podrás saber si te han robado o desaparecido algun sensor.</p>
-                </div>
+                <p>Gracias a nuestro sensor GPS podrás saber si te han robado o desaparecido algun sensor.</p>
             </article>
 
-            <article id="fondo-servicios">
-                <div>
-                    <img src="images/acelerometro.png" class="sensor-imagen">
+            <article id="targetaservicios">
+                <h3>Acelerometro</h3>
+                <div id="sensor-imagendiv">
+                    <img src="images/sensorAcelerometro.png" alt="Acelerometro" class="sensor-imagen">
                 </div>
-                <div class="sensor-info">
-                    <h3>Acelerometro</h3>
-                    <p>Mantén controlados tus sensores cuando haya tormenta por si sufren daños.</p>
-                </div>
+                <p>Mantén controlados tus sensores cuando haya tormenta por si sufren daños.</p>
             </article>
         
         </section>
     <!-- final servicios -->
     <!-- comienzo abajo -->
-        <section class="abajo" id="abajo">
+        <footer class="footer" id="footer">
             <article id="derechos">
                 <p>Copyright</p>
-                <img src="images/copyright.png" id="imagen-copyright">
+                <img src="images/copyright.png" alt="Copyright" id="imagen-copyright">
                 <p>2022 GTI. Todos los derechos reservados</p>
             </article>
             <article id="redessociales">
-                <a href="http://www.facebook.com/"><img src="images/facebook.png" id="img-redsocial"></a>
-                <a href="http://www.instagram.com/"><img src="images/instagram.png" id="img-redsocialInsta"></a>
-                <a href="http://www.twitter.com/"><img src="images/twitter.png" id="img-redsocial"></a>
-                <a href="http://www.youtube.com/"><img src="images/youtube.png" id="img-redsocial"></a>
+                <a href="http://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" id="img-redsocial"></a>
+                <a href="http://www.instagram.com/"><img src="images/instagram.png" alt="Instagram" id="img-redsocialInsta"></a>
+                <a href="http://www.twitter.com/"><img src="images/twitter.png" alt="Twitter" id="img-redsocial"></a>
+                <a href="http://www.youtube.com/"><img src="images/youtube.png" alt="Youtube" id="img-redsocial"></a>
             </article>
             
-        </section>
+        </footer>
     </div>
 </body>
 </html>

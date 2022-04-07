@@ -5,6 +5,10 @@ html{
   scroll-behavior: smooth;
 }
 
+.cabecera{
+  width: 414px;
+}
+
 .encabezado{
   list-style: none;
   display: flex;
