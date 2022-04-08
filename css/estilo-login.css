@@ -55,7 +55,7 @@ body{
 }
 #titulo{
     margin-top: 20px;
-    margin-rigth: 75px;
+    margin-right: 75px;
     color: #820053;
     font-size: 200%;
     font-weight: bold;
@@ -63,12 +63,12 @@ body{
 }
 #usuario{
     margin-right: 10;
-    margib-top: 3px;
+    margin-top: 3px;
     margin-bottom: 20px;
 }
 #contraseña-t{
     margin-right: 10px;
-    margin-top; 3px;
+    margin-top: 3px;
     margin-bottom: 20px;
 }
 
@@ -78,7 +78,7 @@ body{
     border-radius:5px;
     border:1px solid #000000;
     outline:none;
-    padding-left:10px;
+    padding-left:10px
   }
 
   .pag-login-part1 input[type="password"] {

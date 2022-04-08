@@ -21,6 +21,9 @@ body{
     padding: 0px;
     text-align: center;
 }
+ul{
+    list-style:none
+}
 
 /*
 * Fin fondo general------------------

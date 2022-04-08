@@ -11,6 +11,9 @@ body{
 .cont-menu .cont-enlace{
     box-shadow: 0px 0px 2px 1px white;
 }
+ul{
+    list-style:none
+}
 
 /* Estilos para las opciones */
 .cont-menu .cont-enlace .cultivos{

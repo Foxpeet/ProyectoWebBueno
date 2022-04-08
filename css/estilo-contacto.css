@@ -35,6 +35,9 @@ body{
     background-size: cover;
     background-position: center;   
 }
+ul{
+    list-style:none
+}
 
 /*FIN FONDO GENERAL*/
 

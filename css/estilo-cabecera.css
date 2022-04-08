@@ -50,6 +50,9 @@ html{
   padding-left: 7px;
   gap:7px;
 }
+ul{
+  list-style:none
+}
 
 /**
 * Comienzo de Menu desplegable -------------------------------------

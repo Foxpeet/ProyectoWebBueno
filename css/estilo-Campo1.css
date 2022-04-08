@@ -35,6 +35,9 @@ body{
     text-align: center;
 
 }
+ul{
+    list-style:none
+}
 /*
 * Fin fondo general------------------
 */
