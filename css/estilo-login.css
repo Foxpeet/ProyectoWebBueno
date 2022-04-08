@@ -116,16 +116,17 @@ body{
 */
 .boton-aceptar[type="submit"]{
     height:50px;
-    width:150px;
+    width:120px;
     margin-top: 50px;
     background:rgb(130, 0, 83, 0.99);
     border:1px solid #000000;
     color: #ffffff;
     border-radius:5px;
+    margin-left: 20px;
 }
 .boton-atras[type="button"]{
     height:50px;
-    width:150px;
+    width:120px;
     background:#ffffff;
     border:1px solid #000000;
     color: rgb(130, 0, 83, 0.99);
