@@ -1,147 +1,71 @@
-/*
-* Comienza fondo general------------------
-*/
-
-body{
-    background: rgb(238, 255, 210);
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#movil{
-    display:flex;
-    flex-direction: column;
-    width: 414px;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: whitesmoke;
-    padding: 0px;
-    text-align: center;
-}
-
 
 .login{
     display:flex;
-    width: 414px;
+    width: 100%;
+    height:650px;
     margin: 0 auto;
-    justify-content: center;
     flex-wrap: wrap;
-    background-color: whitesmoke;
-
-}
-#pag-login-part1{
-    height:720px;
-    width: 414px;
     background-image:url("../images/imagen_difuminada_blanca.jpg");
     background-position: center;
-    text-align: center;
-
 }
-/*
-* Fin fondo general------------------
-*/
 
 #cuadro{
-    height:520px;
-    width:300px;
-    margin-top: 140px;
-    margin-left: 57px;
-    margin-right: 57px;
-    background-color: #ffffff;
-    border-radius:5px;
-    padding-top: 15px;
-
-}
-#titulo{
-    margin-top: 20px;
-    margin-right: 75px;
-    color: #820053;
-    font-size: 200%;
-    font-weight: bold;
-    
-}
-#usuario{
-    margin-right: 10;
-    margin-top: 3px;
-    margin-bottom: 20px;
-}
-#contraseña-t{
-    margin-right: 10px;
-    margin-top: 3px;
-    margin-bottom: 20px;
+    padding-left: 2%;
 }
 
-.pag-login-part1 input[type="text"] {
-    width:240px;
+#titulo-login{
+    display: flex;
+    justify-content: start;
+    font-size: 40px;
+}
+
+form{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+form section p{
+    font-size: 16px;
+}
+
+#cuadro input[type="text"],
+#cuadro input[type="password"] {
+    width:94%;
     line-height:40px;
-    border-radius:5px;
+    border-radius:2%;
     border:1px solid #000000;
     outline:none;
-    padding-left:10px
-  }
+    margin:auto;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
 
-  .pag-login-part1 input[type="password"] {
-    width:240px;
-    line-height:40px;
-    margin-bottom: 20px;
-    border-radius:5px;
-    border:1px solid #000000;
-    outline:none;
-    padding-left:10px;
-  }
+#extras{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 5%;
+}
 
-#hasolvidado{
-    margin-right: 5px;
-    font-size: 80%;
+.inline{
     display: inline;
 }
 #contactanos{
-    margin-right: 20px;
-    font-size: 80%;
-    display: inline;
-}
-#recordar{
-    margin-right: 50px;
-    font-size: 13px;
-    display: inline;
-}
-#aceptarCondiciones{
-    margin-right: 112px;
-    font-size: 13px;
-    display: inline;
-}
-/*
-* Inicio botones------------------
-*/
-.boton-aceptar[type="submit"]{
-    height:50px;
-    width:120px;
-    margin-top: 50px;
-    background:rgb(130, 0, 83, 0.99);
-    border:1px solid #000000;
-    color: #ffffff;
-    border-radius:5px;
-    margin-left: 20px;
-}
-.boton-atras[type="button"]{
-    height:50px;
-    width:120px;
-    background:#ffffff;
-    border:1px solid #000000;
     color: rgb(130, 0, 83, 0.99);
-    border-radius:5px;
-    margin-top: 20px;
+}
+#botones-login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap:3%;
+    margin-top: 50px;}
+#boton{
+    width: 100%;
 }
 
-.boton-aceptar:hover{
-    background-color:rgba(87, 10, 59, 0.99);
-    border:1px solid gray;
-}
-.boton-atras:hover{
-    background-color:rgb(236, 236, 236);
-    border:1px solid gray;
-}
 /*
 * Fin botones------------------
 */
