@@ -1,74 +1,37 @@
-/*COMIENZA FONDO GENERAL*/
-body{
-    background: rgb(238, 255, 210);
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#movil{
-    display:flex;
-    flex-direction: column;
-    width: 414px;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: whitesmoke;
-    padding: 0px;
-    text-align: center;
-}
 
 .contacto{
     display:flex;
-    width: 414px;
-    margin: 0 auto;
+    width: 100%;
+    height: 700px;
     justify-content: center;
     flex-wrap: wrap;
     background-color: whitesmoke;
-}
-
-#pag-contacto-part1{
-    height:720px;
-    width: 414px;
     text-align: center;
     background-image: url("../images/fondoContacto.jpg");
     background-size: cover;
-    background-position: center;   
-}
-ul{
-    list-style:none
+    background-position: center;
 }
 
-/*FIN FONDO GENERAL*/
-
-#titulo{
-    margin-top: 100px;
-    font-size: 24px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
+#cuadro{
+    padding-left: 2%;
+    height: 80%;
+}
+form{
+    width: 94%;
+    height: 100%;
+}
+#titulo-contacto{
+    display: flex;
+    justify-content: start;
+    font-size: 30px;
 }
 
-#nombre{
-    text-align: left;
-    margin-left: 21px;
-    font-size: 16px;
-    font-style: normal;
-}
-
-#NOMBRE,
-#apellidos, 
-#correoelectronico, 
-#numeroDeTelefono, 
-#asunto, 
-#mensaje{
-    width:240px; 
-    padding-right: 100px;
-    margin-right: 21px;
-    padding-left: 5px;
+.entrada{
+    width:100%; 
     line-height: 20px;
     border: 0,5px solid #000000;
-    margin-top: 20px;
+    margin-top: 17px;
+    font-size: 20px;
 }
 
 #mensaje{
@@ -76,140 +39,16 @@ ul{
 }
 
 #obligatorio{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    color: whitesmoke;
-    margin-right: 240px;
-}
-
-/*INICIO BOTONES*/
-
-.boton-aceptar[type="submit"]{
-    height:50px;
-    width:150px;
-    margin-top: 10px;
-    background:rgb(130, 0, 83, 0.99);
-    border:1px solid #000000;
-    color: #ffffff;
-    border-radius:5px;
-    margin-left: 40px;
-
-}
-.boton-atras[type="button"]{
-    height:50px;
-    width:150px;
-    background:#ffffff;
-    border:1px solid #000000;
     color: rgb(130, 0, 83, 0.99);
-    border-radius:5px;
-    margin-top: 20px;
-    
 }
 
-.boton-aceptar:hover{
-    background-color:rgba(87, 10, 59, 0.99);
-    border:1px solid gray;
-}
-.boton-atras:hover{
-    background-color:rgb(236, 236, 236);
-    border:1px solid gray;
-}
-
-/*FIN BOTONES*/
-
-/*
-* Comienzo footer ------------------
-*/
-
-.footer{
-    background-color: rgb(130, 0, 83, 0.99);
-    display:flex;
-    justify-content:flex-start;
-    gap:15px;
-    flex-direction: column;
-    width: 414px;
-    height: 130px;
-    color:white;
-}
-#derechos{
-    height: 30px;
+#botones-contacto{
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    display:flex;
-    justify-content: center;
-    font-family: "Arial Normal", "Arial", sans-serif;
-    font-size: 15px;
+    gap:5%;
 }
-
-#imagen-copyright{
-    margin-top: 10px;
-    width: 12px;
-    height: 12px;
-}
-
-#redessociales{
-    height: 60px;
-    display:flex;
-    justify-content: space-around;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5px;
-}
-#img-redsocial{
-    width: 60px;
-    height: 60px;
-}
-#img-redsocialInsta{
-    width: 70px;
-    height: 70px;
-}
-
-/*
-* Fin footer------------------
-*/
-
-/*
-* Comienza confirmacion (provisional)------------------
-*/
-
-#hasIniciadoSesionCorrectamente {
-    margin-top: 100px;
-    font-size: 24px;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-}
-
-.confirmacionContacto {
-    display: flex;
-    height: 720px;
-    width: 414px;
-    text-align: center;
-    background-image: url("../images/fondoContacto.jpg");
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-}
-#pag-confirmacionUSER-part1{
-    background-color: whitesmoke;
-    border-radius: 20px;
-    width: 80%;
-    height: 40%;
-}
-
-.boton-aceptar {
-    height: 50px;
-    width: 150px;
-    margin-top: 10px;
-    background: rgb(130, 0, 83, 0.99);
-    border: 1px solid #000000;
-    color: #ffffff;
-    border-radius: 5px;
-    margin-left: 40px;
-}
-
-#confirmacionContacto{
-    align-items: center;
+#boton{
+    width: 100%;
 }
