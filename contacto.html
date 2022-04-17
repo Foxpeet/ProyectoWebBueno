@@ -43,11 +43,11 @@
         <div class="cuadro" id="cuadro">
             <h1 class="titulo" id="titulo-contacto">CONTACTO</h1>
             <!--comienzo formulario-->
-            <form onsubmit="enviarCONTACTO(event)">
+            <form> <!-- onsubmit="enviarCONTACTO(event)" -->
                 <section>
                     <input class="entrada" type="text" placeholder="Nombre*" required>
-                    
                 </section>
+
                 <section>
                     <input class="entrada" type="text" placeholder="Apellido*" required>
                 </section>
@@ -59,21 +59,26 @@
                 <section>
                    <input class="entrada" type="number" placeholder="Telefono">
                 </section>
+
                 <section>
                     <input class="entrada" type="text" placeholder="Asunto*" required> 
                 </section>
+
                 <section>
                     <input class="entrada" id="mensaje" type="text" placeholder="Mensaje*" required>
                 </section>
+
                 <section>
                     <p id="obligatorio">*Campo obligatorio</p>
                 </section>
+
                 <section id="botones-contacto">
                     <a href="index.html" id="boton">
                         <button type="button" class="boton2" id="boton"> ATRAS</button>
                     </a>
-                    <a href="#" id="boton">
-                        <button type="submit" class="boton1" id="boton"> ENVIAR</button>
+
+                    <a href="confirmacion-contacto.html" id="boton">
+                        <button type="button" class="boton1" id="boton"> ENVIAR</button> <!-- type="submit" -->
                     </a>
                 </section>
             </form>

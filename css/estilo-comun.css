@@ -284,10 +284,13 @@ section{
 h1{
     color:rgb(130, 0, 83, 0.99);
     font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+    font-size: 40px;
 }
 h2, h3, h4, h5, h6{
     font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2 {
+    font-size: 30px;
 }
 h3{
     font-size: 25px;
@@ -310,7 +313,7 @@ p{
 */
 
 .enlaces {
-    height: 15px;
+    height: 30px;
 }
 
 .espacio-descubrir {
