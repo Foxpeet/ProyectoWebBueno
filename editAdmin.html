@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTI || Iniciar sesión</title>
+
+    <link href="css/estilo-comun.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo-login.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <!-- seccion de cabecera-->
+    <header class="cabecera" role="banner">
+        <a href="index.html" id="logo">
+            <img src="images/LogoGTI.png" alt="logo de GTI" id="logo">
+        </a>
+        <div id="login-y-menu">
+            <!-- aquí va el menu desplegable-->
+            <div class="respmenu" id="menu">
+                <img src="images/menu-hamburger.svg" alt="Icono del menu Hambuerguesa" id="menu">
+                <input type="checkbox">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Sobre Nosotros</a></li>
+                        <li><a href="index.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="espacio"></div>
+    <!-- fin del encabezado -->
+    <section class="editAdmin">
+        <div class="cuadro" id="cuadro">
+            <!-- imagen del fondo del editAdmin-->
+            <h1 class="titulo" id="titulo-editAdmin">Edita tu perfil</h1>
+                
+                <section>   
+                    <h4 class="cambioFoto" id="cambioFoto-Foto">Cambio de foto de perfil</h4>
+                    <img src="images/iconousuarioanonimo" id="tabla"></a><div id="espacio"></div><a href="#"></a>
+            
+                <section>   
+                    <h4 class="cambioNombre" id="cambioNombre-nombre">Cambio de nombre de usuario</h4>
+                    <input type="text" placeholder="Introduzca su nuevo nombre de usuario" name="cambiodenombre" required> <br>
+                </section>
+                
+                <section>
+                    <h4 class="cambioContraseña" id="cambioContraseña-contraseña">Cambio de la contraseña</h4>
+                    <input type="password" placeholder="Introduzca su nueva contraseña" name="passw" required> <br>
+                </section>
+                <div id="extras">
+                    
+
+                    <!-- <section>
+                        <input type="checkbox" required>
+                        <p class="inline">Acepto las condiciones</p>
+                    </section> -->
+                    <section id="botones-login">
+                        <a href="vistaDeAdmin.html" id="boton">
+                            <button type="button" class="boton2" id="boton"> ATRAS</button>
+                        </a>
+                        <a href="vistaDeAdmin.html" id="boton">
+                            <button type="submit" class="boton1" id="boton"> GUARDAR</button>
+                        </a>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </section>
