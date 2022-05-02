@@ -214,6 +214,21 @@ ul {
 /**
 * botones y redirecciones -------------------------------------
 */
+input{
+    accent-color: rgb(130, 0, 83, 0.99);
+    caret-color: rgb(130, 0, 83, 0.99);
+}
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover{
+    border: 0.5px solid rgb(130, 0, 83, 0.99);
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus{
+    box-shadow: 1.5px 1.5px rgb(130, 0, 83, 0.99);
+}
+
 .boton1{
     height:50px;
     width:120px;

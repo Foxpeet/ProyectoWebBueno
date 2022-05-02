@@ -38,6 +38,10 @@ form section p{
     margin-bottom: 25px;
     font-size: 20px;
 }
+#cuadro input[type="text"]:hover,
+#cuadro input[type="password"]:hover {
+    border: 1px solid rgb(130, 0, 83, 0.99);
+}
 
 #extras{
     display: flex;
