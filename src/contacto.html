@@ -43,7 +43,7 @@
         <div class="cuadro" id="cuadro">
             <h1 class="titulo" id="titulo-contacto">CONTACTO</h1>
             <!--comienzo formulario-->
-            <form> <!-- onsubmit="enviarCONTACTO(event)" -->
+            <form onsubmit=enviarCONTACTO(event)> <!-- onsubmit="enviarCONTACTO(event)" -->
                 <section>
                     <input class="entrada" type="text" placeholder="Nombre*" required>
                 </section>
@@ -78,7 +78,7 @@
                     </a>
 
                     <a href="confirmacion-contacto.html" id="boton">
-                        <button type="button" class="boton1" id="boton"> ENVIAR</button> <!-- type="submit" -->
+                        <button type="submit" class="boton1" id="boton"> ENVIAR</button> <!-- type="submit" -->
                     </a>
                 </section>
             </form>
@@ -101,6 +101,8 @@
             <a href="http://www.youtube.com/"><img src="../images/youtube.png" alt="Youtube" id="img-redsocial"></a>
         </article>
     </footer>
+    
+    <script src="../js/contacto.js"></script>
 
 </body>
 </html>
