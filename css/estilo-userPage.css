@@ -79,7 +79,8 @@ ul{
 }
 
 /* Estilos para los enlaces */
-.cont-menu .cont-enlace .enlace a{
+.cont-menu .cont-enlace .enlace button{
+    width: 100%;
     display: block;
     padding: 10px 15px;
     text-decoration: none;
@@ -90,9 +91,10 @@ ul{
 
 }
 
-.cont-menu .cont-enlace .enlace a:hover{
+.cont-menu .cont-enlace .enlace button:hover{
     background-color: #1a567e;
     color: white;
+    cursor: pointer;
 }
 /* Final Menú acordeón */
 
