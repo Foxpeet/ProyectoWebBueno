@@ -16,7 +16,7 @@ $pass = $_POST["passw"];
             echo "<script>window.location='../../vistaDeAdmin.html'; alert('Bienvenido administrador')</script>";
         }
         else if($nombre != "admin"){
-            echo "<script>window.location='../../app/userPage.html'; alert('Bienvenido $nombre')</script>";
+            echo "<script>window.location='../../userPage.html'; alert('Bienvenido $nombre')</script>";
         }
     }
     else{
