@@ -1,15 +1,15 @@
 <?php
 $dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "usuarios";
+$dbuser = "ppersan_proyecto";
+$dbpass = "@Re46470.";
+$dbname = "ppersan_proyecto";
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 if(!$conn){
     die("No hay conexion:" .mysqli_connect_error());
 }
 $nombre = $_POST["login"];
 $pass = $_POST["passw"];
-    $query = mysqli_query($conn, "SELECT * FROM login WHERE usuario = '".$nombre."' and password ='".$pass."'");
+    $query = mysqli_query($conn, "SELECT * FROM usuarios WHERE nombre = '".$nombre."' and password ='".$pass."'");
     $nr = mysqli_num_rows($query);
     if($nr==1){
         if($nombre == "admin"){
