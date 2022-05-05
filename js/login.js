@@ -5,7 +5,7 @@ function enviarLogin() {
     var nombreUsuario = document.getElementById("usuario").value;
     var passUsuario = document.getElementById("contraseña").value
 
-    var url = "api/v0.0/" + nombreUsuario + "-" + passUsuario + ".json"
+    var url = nombreUsuario + "-" + passUsuario + ".json"
 
     console.log(url)
 
@@ -14,7 +14,7 @@ function enviarLogin() {
         return respuesta.json()
     }).then(function (datos) {
         console.log(datos.nombre)
-        location.href = "app/userPage.html"
+        location.href = "../src/userPage.html"
     }).catch(function () {
         console.log("Datos incorrectos")
     })
