@@ -43,21 +43,24 @@ form section p{
     border: 1px solid rgb(130, 0, 83, 0.99);
 }
 
+#ojoTachado{
+    display:none;
+}
 .iconoOjo{
     position: absolute;
-    left: 65%;
-    top: 55%;
+    margin-top: .25rem;
+    margin-left: -2.25rem;
 }
 .btn-btn-primary{
     position: absolute;
-    left: 65%;
-    top:55%;
     border: none;
     background-color: transparent;
     z-index: 2;
     width: 32px;
     height: 32px;
     cursor: pointer;
+    margin-top: .25rem;
+    margin-left: -2.25rem;
 }
 
 #extras{
