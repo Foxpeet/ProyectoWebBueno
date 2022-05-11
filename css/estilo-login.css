@@ -43,6 +43,23 @@ form section p{
     border: 1px solid rgb(130, 0, 83, 0.99);
 }
 
+.iconoOjo{
+    position: absolute;
+    left: 65%;
+    top: 55%;
+}
+.btn-btn-primary{
+    position: absolute;
+    left: 65%;
+    top:55%;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
 #extras{
     display: flex;
     flex-direction: column;
