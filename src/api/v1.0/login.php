@@ -1,8 +1,8 @@
 <?php
 $dbhost = "localhost";
-$dbuser = "ppersan_proyecto";
-$dbpass = "@Re46470.";
-$dbname = "ppersan_proyecto";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "mapas";
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 if(!$conn){
     die("No hay conexion:" .mysqli_connect_error());
