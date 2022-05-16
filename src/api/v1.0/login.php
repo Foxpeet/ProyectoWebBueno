@@ -2,14 +2,14 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "usuarios";
+$dbname = "mapas";
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 if(!$conn){
     die("No hay conexion:" .mysqli_connect_error());
 }
 $nombre = $_POST["login"];
 $pass = $_POST["passw"];
-    $query = mysqli_query($conn, "SELECT * FROM login WHERE usuario = '".$nombre."' and password ='".$pass."'");
+    $query = mysqli_query($conn, "SELECT * FROM usuarios WHERE nombre = '".$nombre."' and password ='".$pass."'");
     $nr = mysqli_num_rows($query);
     if($nr==1){
         if($nombre == "admin" && $pass == "1234"){
@@ -23,7 +23,7 @@ $pass = $_POST["passw"];
         }
     }
     else{
-        echo "<script>window.location='login.html' ; alert('Usuario no existe')</script>";
+        echo "<script>window.location='../../login.html' ; alert('Usuario no existe')</script>";
     }
 
 ?>
