@@ -43,6 +43,7 @@ ul {
     height: 80px;
     align-items: center;
     position: fixed;
+    border-bottom: 2px solid lightgray;
 }
 
 #logo {
@@ -300,6 +301,7 @@ h1{
     color:rgb(130, 0, 83, 0.99);
     font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
+    margin:0;
 }
 h2, h3, h4, h5, h6{
     font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
@@ -338,6 +340,9 @@ p{
     height: 50px;
     padding: 0px;
     margin: 0px;
+}
+.espacio-descubrir a{
+    text-decoration: none;
 }
 
 .descubrir-mas{

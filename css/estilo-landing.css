@@ -86,6 +86,7 @@
     padding-bottom: 15px;
 }
 
+
 #targetaservicios{
     padding: 5%;
     display:flex;
@@ -97,7 +98,15 @@
     border-top: 2px solid whitesmoke;
     text-align: center;
 }
-
+@media(max-width:500px){
+    #Servicios{
+        flex-direction: column;
+        align-items: center;
+    }
+    #targetaservicios{
+        width: 80%;
+    }
+}
 #sensor-imagen{
     width: 70px;
     height: 70px;

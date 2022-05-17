@@ -44,33 +44,36 @@
             <h1 class="titulo" id="titulo-contacto">CONTACTO</h1>
             <!--comienzo formulario-->
             <form onsubmit="enviarContacto(event)">
-                <section>
-                    <input class="entrada" type="text" placeholder="Nombre*" required>
-                </section>
 
-                <section>
-                    <input class="entrada" type="text" placeholder="Apellido*" required>
-                </section>
+                <h4>Introduce tu nombre*</h4>
+                <input class="entrada" type="text" placeholder="Nombre*" required>
+
+                <h4>Introduce tu apellido*</h4>
+                <input class="entrada" type="text" placeholder="Apellido*" required>
                
-                <section>
-                   <input class="entrada" type="email" placeholder="Correo electrónico*" required>
-                </section>
+                <h4>Introduce tu correo electronico*</h4>
+                <input class="entrada" type="email" placeholder="Correo electrónico*" required>
                
-                <section>
-                   <input class="entrada" type="number" placeholder="Telefono">
-                </section>
+                <h4>Introduce tu telefono</h4>
+                <input class="entrada" type="number" placeholder="Telefono">
 
-                <section>
-                    <input class="entrada" type="text" placeholder="Asunto*" required> 
-                </section>
+                <h4>Asunto*</h4>
+                <select class="entrada" required>
+                    <option value="">Selecciona la razón del contacto</option>
+                    <option value="Dudas">Dudas</option>
+                    <option value="Reclamacion">Reclamacion</option>
+                    <option value="Inicio_de_sesion">He olvidado la contraseña</option>
+                    <option value="Inicio_de_sesion">He olvidado el usuario</option>
+                    <option value="tecnico">Contactar con un técnico</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <h5>En caso de haber seleccionado "Otro", introduzca el motivo</h5>
+                <input class="entrada" type="text" spellcheck="true" placeholder="Otro">
 
-                <section>
-                    <input class="entrada" id="mensaje" type="text" placeholder="Mensaje*" required>
-                </section>
+                <h4>Introduce el mensaje*</h4>
+                <input class="entrada" id="mensaje" type="text" placeholder="Mensaje*" spellcheck="true" required>
 
-                <section>
-                    <p id="obligatorio">*Campo obligatorio</p>
-                </section>
+                <p id="obligatorio">* Campo obligatorio</p>
 
                 <section id="botones-contacto">
                     <a href="index.html" id="boton">

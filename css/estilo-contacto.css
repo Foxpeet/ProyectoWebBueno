@@ -2,7 +2,7 @@
 .contacto{
     display: flex;
     width: 100%;
-    height: 700px;
+    height: max-content;
     background-color: whitesmoke;
     background-image: url("../images/fondoContacto.jpg");
     background-size: cover;
@@ -10,7 +10,10 @@
 }
 
 #cuadro{
-    height: 80%;
+    height: max-content;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 form{
     width: 94%;
@@ -20,6 +23,10 @@ form{
     display: flex;
     justify-content: start;
     font-size: 30px;
+}
+h4, h5{
+    margin-top: 1rem;
+    margin-bottom: -0.75rem;
 }
 
 .entrada{
@@ -35,8 +42,8 @@ form{
 }
 #mensaje{
    padding-bottom: 55px;
+   resize: vertical;
 }
-
 #obligatorio{
     font-size: 15px;
     color: rgb(130, 0, 83, 0.99);
@@ -44,7 +51,6 @@ form{
 
 #botones-contacto{
     width: 100%;
-    height: 100%;
     display: flex;
     gap:5%;
 }
