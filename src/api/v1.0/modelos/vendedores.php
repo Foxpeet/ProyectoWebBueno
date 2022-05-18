@@ -19,15 +19,9 @@ if ($peticion->metodo() === "GET") {
 if ($peticion->metodo() === "PUT") {
     $sql = "UPDATE `clientes` SET 
                         `nombre`='" . $peticion->parametrosBody()->nombre . "',
-                        `apellidos`='" . $peticion->parametrosBody()->apellidos . "',
-                        `password`='" . $peticion->parametrosBody()->password . "'
+                        `apellidos`='" . $peticion->parametrosBody()->apellidos . "'
+ 
                 WHERE `id` = " . $peticion->parametrosBody()->id;
-    mysqli_query($conn, $sql);               
-    $sql = "UPDATE `usuarios` SET 
-                `nombre`='" . $peticion->parametrosBody()->nombre . "',
-                `apellidos`='" . $peticion->parametrosBody()->apellidos . "',
-                `password`='" . $peticion->parametrosBody()->password . "'
-        WHERE `id` = " . $peticion->parametrosBody()->id;
     mysqli_query($conn, $sql);
 }
 
@@ -36,12 +30,6 @@ if($peticion->metodo() === "POST") {
             VALUES ('".$peticion->parametrosPost()["nombre"]."',
                     '".$peticion->parametrosPost()["apellidos"]."',
                     '".$peticion->parametrosPost()["password"]."')";
-    mysqli_query($conn, $sql);
-
-    $sql = "INSERT INTO `usuarios`(`nombre`, `apellidos`, `password`) 
-            VALUES ('".$peticion->parametrosPost()["nombre"]."',
-                        '".$peticion->parametrosPost()["apellidos"]."',
-                        '".$peticion->parametrosPost()["password"]."')";
     mysqli_query($conn, $sql);
 }
 
