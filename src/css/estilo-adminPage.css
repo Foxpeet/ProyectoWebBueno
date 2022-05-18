@@ -18,7 +18,14 @@ ul{
     margin-bottom: 15%;
     padding-bottom: 1%;
 }
-
+table {
+    border-collapse: collapse;
+    width: 95%;
+}
+th, td {
+    border: rgb(161, 161, 161) 2px solid;
+    text-align: center;
+}
 #espacio-iconos{
     height: 20%;
 }
