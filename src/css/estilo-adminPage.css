@@ -19,7 +19,7 @@ ul{
 .cuadro{
     max-width: 85%;
     margin-bottom: 15%;
-    padding: 1rem;
+    padding: 1%;
     margin-top: 8rem;
 }
 table {
@@ -44,7 +44,7 @@ th, td {
     left: 50%;
     transform: translate(-166px, -86px);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
-    padding: 2rem;
+    padding: 1em;
     display: none;
     background-color: white;
     
