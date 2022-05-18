@@ -1,0 +1,36 @@
+#vistaAdmin{
+    text-align: center;
+    background-image: url("../images/fondo_admin.jpg");
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    list-style:none
+}
+
+#administrador{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color:whitesmoke;
+}
+.cuadro{
+    max-width: 85%;
+    margin-bottom: 15%;
+    padding-bottom: 1%;
+}
+table {
+    border-collapse: collapse;
+    width: 95%;
+}
+th, td {
+    border: rgb(161, 161, 161) 2px solid;
+    text-align: center;
+}
+#espacio-iconos{
+    height: 20%;
+}
+#icono{
+    width: 20%;
+    height: 20%;
+    margin: 10%;
+}

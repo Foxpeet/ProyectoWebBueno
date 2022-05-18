@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTI || Iniciar sesión</title>
+
+    <link href="css/estilo-comun.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo-login.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <!-- seccion de cabecera-->
+    <header class="cabecera" role="banner">
+        <a href="index.html" id="logo">
+            <img src="images/LogoGTI.png" alt="logo de GTI" id="logo">
+        </a>
+    </header>
+    <div id="espacio"></div>
+    <!-- fin de encabezado -->
+    <section class="login">
+        <div class="cuadro" id="cuadro">
+            <!-- imagen del fondo del login-->
+            <h1 class="titulo" id="titulo-login">Iniciar sesión</h1>
+            <form action="api/v1.0/login.php" method="post">
+                <section>   
+                    <input type="text" placeholder="Introduzca su usuario" name="login" required> <br>
+                </section>
+              <section class="col">
+                    <input class="form-control" type="password" placeholder="Introduzca su contraseña" name="passw" id="password" required>
+                    <button class="btn-btn-primary" type="button" onclick="mostrarContrasena()"></button>
+                    <img class="iconoOjo" id="ojo" src="images/ojo.png" alt="">
+                    <img class="iconoOjo" id="ojoTachado" src="images/ojo-tachado.png" alt="">
+                </section>
+                <div id="extras">
+                    <section>
+                        <p class="inline">¿Has olvidado tu contraseña?</p>
+                        <a href="contacto.html">
+                            <p class="inline" id="contactanos">Contáctanos</p>
+                        </a>
+                    </section>
+                    <section>
+                        <input type="checkbox">
+                        <p class="inline">Recordar mi usuario y contraseña</p>
+                    </section>
+
+                    <!-- <section>
+                        <input type="checkbox" required>
+                        <p class="inline">Acepto las condiciones</p>
+                    </section> -->
+                    <section id="botones-login">
+                        <a href="index.html" id="boton">
+                            <button type="button" class="boton2" id="boton"> ATRAS</button>
+                        </a>
+                        <a href="#" id="boton">
+                            <button type="submit" class="boton1" id="boton"> ACEPTAR</button>
+                        </a>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- comienzo footer -->
+    
+    <footer class="footer" id="footer">
+        <article id="derechos">
+            <p>Copyright</p>
+            <img src="images/copyright.png" alt="Copyright" id="imagen-copyright">
+            <p>2022 GTI. Todos los derechos reservados</p>
+        </article>
+        <article id="redessociales">
+            <a href="http://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" id="img-redsocial"></a>
+            <a href="http://www.instagram.com/"><img src="images/instagram.png" alt="Instagram" id="img-redsocial"></a>
+            <a href="http://www.twitter.com/"><img src="images/twitter.png" alt="Twitter" id="img-redsocial"></a>
+            <a href="http://www.youtube.com/"><img src="images/youtube.png" alt="Youtube" id="img-redsocial"></a>
+        </article>
+    </footer>
+
+    <script src="js/login.js"></script>
+    <script src="js/mostrarContrasenya.js"></script>
+</body>
+
+</html>
