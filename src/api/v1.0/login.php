@@ -9,6 +9,7 @@ if(!$conn){
 }
 $nombre = $_POST["login"];
 $pass = $_POST["passw"];
+    $query = mysqli_query($conn, "SELECT * FROM clientes WHERE nombre = '".$nombre."' and password ='".$pass."'");
     $query = mysqli_query($conn, "SELECT * FROM usuarios WHERE nombre = '".$nombre."' and password ='".$pass."'");
     $nr = mysqli_num_rows($query);
     if($nr==1){

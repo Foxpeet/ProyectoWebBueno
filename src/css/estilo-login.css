@@ -1,13 +1,13 @@
 .login{
     display:flex;
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-image:url("../images/imagen_difuminada_blanca.jpg");
     background-position: center;
 }
 
 #cuadro{
-    height: 65%;
+    height: 75%;
 }
 
 #titulo-login{
@@ -30,7 +30,7 @@ form section p{
 #cuadro input[type="password"] {
     width:94%;
     line-height:40px;
-    border-radius:2%;
+    border-radius:4px;
     border:1px solid #000000;
     outline:none;
     margin:auto;
