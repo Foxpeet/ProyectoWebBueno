@@ -8,7 +8,34 @@
     <title>GTI || Vista de Administrador</title>
     <link href="../css/estilo-comun.css" rel="stylesheet" type="text/css">
     <link href="../css/estilo-adminPage.css" rel="stylesheet" type="text/css">
+    <style>
+        #form-vendedor {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-166px, -86px);
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
+            padding: 1em;
+            display: none;
+            background-color: white;
+        }
 
+        form {
+            display: flex;
+            width: 300px;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-evenly;
+        }
+
+        label {
+            width: 100px;
+        }
+
+        input {
+            width: 180px;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,13 +60,12 @@
         </div>
     </header>
     <div class="vistaAdmin" id="vistaAdmin">
+        <h1 id="administrador">ADMIN</h1>
         <div class="cuadro">
             <!-- imagen del fondo de vistaAdmin-->
-            <h1 id="administrador">ADMIN</h1>
-            <div><h3>Listado de clientes</h3></div>
             <div>
                 <input type="text" id="buscar">
-                <button id="usuario_nuevo" onclick="openForm()">Añadir Usuario</button>
+                <button onclick="openForm()">Nuevo Usuario</button>
             </div>
 
             <div id="listado-vendedores"></div>
