@@ -1,43 +1,42 @@
-#vistaAdmin{
+#vistaAdmin {
     text-align: center;
     background-image: url("../images/fondo_admin.jpg");
     background-size: cover;
     background-position: center;
 }
-ul{
-    list-style:none
-}
 
-#administrador{
+#administrador {
+    margin: auto;
     margin-top: 3%;
     margin-bottom: 3%;
-    color:rgb(130, 0, 83, 0.99);
+    width: 50%;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: black;
+    border-bottom: 2px solid black;
 }
-.cuadro{
+
+.cuadro {
     max-width: 85%;
     margin-bottom: 15%;
     padding: 1rem;
     margin-top: 8rem;
 }
-table {
-    border-collapse: collapse;
-    width: 95%;
+
+#buscador {
+    height: 2.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
 }
-th, td {
-    border: rgb(161, 161, 161) 2px solid;
-    text-align: center;
+
+input[type="text"] {
+    border: 1px solid black;
 }
-#espacio-iconos{
-    height: 20%;
+
+input[type="text"]:focus {
+    border: 0px solid black;
 }
-#icono{
-    width: 20%;
-    height: 20%;
-    margin: 10%;
-}
+
 #form-vendedor {
     position: absolute;
     top: 50%;
@@ -47,33 +46,87 @@ th, td {
     padding: 2rem;
     display: none;
     background-color: white;
-    
+
 }
 
 form {
     display: flex;
     width: 300px;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1rem;
     justify-content: space-evenly;
-    }
+    border-radius: 3px;
+}
 
 label {
     width: 100px;
 }
-#buscar{
-    height: 4%;
-    width: fit-content;
+
+#buscar {
+    height: 95%;
+    width: 50%;
 }
-#usuario_nuevo{
-    background-color:rgb(130, 0, 83, 0.99);
-    color: white;
-    border: 8px;
-    border-color: black;
-    height: 4%;
-    flex: content;
+
+#usuario_nuevo {
+    height: 100%;
+    width: 30%;
+    margin: 0;
 }
-h3{
-    margin-top: 1%;
-    color:rgb(130, 0, 83, 0.99);
+
+#listado-vendedores {
+    display: flex;
+    flex-direction: column;
+}
+
+#fila-usuario {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-align: start;
+    height: 5rem;
+}
+
+#editar {
+    order: 1;
+}
+
+#borrar {
+    order: 1;
+}
+
+.botones {
+    background-color: red;
+}
+
+#NombreYApellido {
+    display: flex;
+    margin: 0;
+    border: 2px solid grey;
+    flex: 1 1 auto;
+    height: 100%;
+    align-items: center;
+}
+
+#contenedorBotones {
+    display: flex;
+    margin: 0;
+    border: 2px solid grey;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+#listado-vendedores p {
+    margin: 0;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+}
+
+
+h3 {
+    margin-top: 1rem;
+    color: rgb(130, 0, 83, 0.99);
 }

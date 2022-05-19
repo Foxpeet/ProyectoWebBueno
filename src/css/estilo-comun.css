@@ -16,7 +16,7 @@ body {
     background: whitesmoke;
     margin: 0px;
     padding: 0px;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -171,7 +171,7 @@ ul {
     color: white;
 }
 
-.footer p{
+.footer p {
     font-size: 16px;
 }
 
@@ -214,77 +214,87 @@ ul {
 /**
 * botones y redirecciones -------------------------------------
 */
-input{
+input {
     accent-color: rgb(130, 0, 83, 0.99);
     caret-color: rgb(130, 0, 83, 0.99);
+    padding: 0px;
 }
+
 input[type="text"]:hover,
 input[type="number"]:hover,
-input[type="email"]:hover{
-    border: 0.5px solid rgb(130, 0, 83, 0.99);
+input[type="email"]:hover {
+    border: 1px solid rgb(130, 0, 83, 0.99);
+    padding: 0px;
 }
+
 input[type="text"]:focus,
 input[type="number"]:focus,
-input[type="email"]:focus{
+input[type="email"]:focus {
     box-shadow: 1.5px 1.5px rgb(130, 0, 83, 0.99);
+    padding: 0px;
 }
 
-.boton1{
-    height:50px;
-    width:120px;
-    background:rgb(130, 0, 83, 0.99);
-    border:1px solid #000000;
+.boton1 {
+    height: 50px;
+    width: 120px;
+    background: rgb(130, 0, 83, 0.99);
+    border: 1px solid #000000;
     color: #ffffff;
-    border-radius:5px;
+    border-radius: 5px;
     font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.boton1:hover{
-    background-color:rgba(87, 10, 59, 0.99);
-    border:1px solid gray;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.boton2{
-    height:50px;
-    width:120px;
-    background:#ffffff;
-    border:1px solid #000000;
-    color: rgb(130, 0, 83, 0.99);
-    border-radius:5px;
-    font-size: 100%;
-    font-family: Arial,Helvetica,sans-serif;
+.boton1:hover {
+    background-color: rgba(87, 10, 59, 0.99);
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
-.boton2:hover{
-    background-color:rgb(236, 236, 236);
-    border:1px solid gray;
-    font-family: Arial,Helvetica,sans-serif;
+
+.boton2 {
+    height: 50px;
+    width: 120px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    color: rgb(130, 0, 83, 0.99);
+    border-radius: 5px;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton2:hover {
+    background-color: rgb(236, 236, 236);
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 /**
 * sections y contenido -------------------------------------
 */
 
-section{
-    background-size:cover;
+section {
+    background-size: cover;
     background-position: center;
 }
 
-.section-info{
-    color:white;
+.section-info {
+    color: white;
 }
-.section-action{
+
+.section-action {
     color: black;
 }
 
-.icono{
+.icono {
     border: 1px solid black;
     border-radius: 100%;
     background-color: whitesmoke;
 }
 
-.cuadro{
-    display:flex;
+.cuadro {
+    display: flex;
     flex-direction: column;
     max-width: 500px;
     width: 85%;
@@ -296,21 +306,31 @@ section{
     padding-left: 2%;
 }
 
-h1{
-    color:rgb(130, 0, 83, 0.99);
+h1 {
+    color: rgb(130, 0, 83, 0.99);
     font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
 }
-h2, h3, h4, h5, h6{
+
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+button {
     font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 h2 {
     font-size: 30px;
 }
-h3{
+
+h3 {
     font-size: 25px;
 }
-p{
+
+p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
@@ -339,11 +359,12 @@ p{
     padding: 0px;
     margin: 0px;
 }
-.espacio-descubrir a{
+
+.espacio-descubrir a {
     text-decoration: none;
 }
 
-.descubrir-mas{
+.descubrir-mas {
     color: white;
     padding: 0px;
     margin: 0px;

@@ -36,10 +36,12 @@
         <div class="cuadro">
             <!-- imagen del fondo de vistaAdmin-->
             <h1 id="administrador">ADMIN</h1>
-            <div><h3>Listado de clientes</h3></div>
             <div>
-                <input type="text" id="buscar">
-                <button id="usuario_nuevo" onclick="openForm()">Añadir Usuario</button>
+                <h3>Listado de clientes</h3>
+            </div>
+            <div id="buscador">
+                <input type="text" id="buscar" placeholder="Busca un cliente">
+                <button id="usuario_nuevo" class="boton1" onclick="openForm()">Añadir Usuario</button>
             </div>
 
             <div id="listado-vendedores"></div>
@@ -50,29 +52,32 @@
                     <input type="text" name="nombre" id="nombre">
                     <label for="apellidos">Apellidos:</label>
                     <input type="text" name="apellidos" id="apellidos">
-                    <input type="submit">
-                    <input type="button" value="Cancelar" onclick="closeForm();">
+                    <label for="password">Contraseña:</label>
+                    <input type="text" name="password" id="password">
+                    <input type="submit" class="boton1" value="Confirmar">
+                    <input type="button" class="boton2" value="Cancelar" onclick="closeForm();">
                     <input type="hidden" name="id" id="id">
                 </form>
             </div>
 
         </div>
     </div>
-<!-- comienzo footer -->
-    
-<footer class="footer" id="footer">
-    <article id="derechos">
-        <p>Copyright</p>
-        <img src="../images/copyright.png" alt="Copyright" id="imagen-copyright">
-        <p>2022 GTI. Todos los derechos reservados</p>
-    </article>
-    <article id="redessociales">
-        <a href="http://www.facebook.com/"><img src="../images/facebook.png" alt="Facebook" id="img-redsocial"></a>
-        <a href="http://www.instagram.com/"><img src="../images/instagram.png" alt="Instagram" id="img-redsocial"></a>
-        <a href="http://www.twitter.com/"><img src="../images/twitter.png" alt="Twitter" id="img-redsocial"></a>
-        <a href="http://www.youtube.com/"><img src="../images/youtube.png" alt="Youtube" id="img-redsocial"></a>
-    </article>
-</footer>
+    <!-- comienzo footer -->
+
+    <footer class="footer" id="footer">
+        <article id="derechos">
+            <p>Copyright</p>
+            <img src="../images/copyright.png" alt="Copyright" id="imagen-copyright">
+            <p>2022 GTI. Todos los derechos reservados</p>
+        </article>
+        <article id="redessociales">
+            <a href="http://www.facebook.com/"><img src="../images/facebook.png" alt="Facebook" id="img-redsocial"></a>
+            <a href="http://www.instagram.com/"><img src="../images/instagram.png" alt="Instagram"
+                    id="img-redsocial"></a>
+            <a href="http://www.twitter.com/"><img src="../images/twitter.png" alt="Twitter" id="img-redsocial"></a>
+            <a href="http://www.youtube.com/"><img src="../images/youtube.png" alt="Youtube" id="img-redsocial"></a>
+        </article>
+    </footer>
 
     <script src="js/vendedoresREST.js"></script>
     <script src="js/vendedores.js"></script>

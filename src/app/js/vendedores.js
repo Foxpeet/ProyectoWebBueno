@@ -4,7 +4,7 @@ form.addEventListener('submit', enviarFormulario);
 
 let busqueda = document.getElementById('buscar')
 
-async function filtrarListado(){
+async function filtrarListado() {
     console.log(busqueda.value) //no hace falta ponerlo
     vendedores = await searchVendedores(busqueda.value) //hace la llamada al servidor
     crearListadoVendedores()
@@ -30,7 +30,7 @@ async function enviarFormulario(event) {
     event.preventDefault();
     let data = new FormData(form);
     console.log(data.get('id'));
-    if(data.get('id') === '') {
+    if (data.get('id') === '') {
         await createVendeddor(data);
     } else {
         await updateVendedor(data);
@@ -49,7 +49,7 @@ function editarVendedor(item) {
 }
 
 async function borrarVendedor(item) {
-    if(confirm('¿Eliminar el vendedor ' + item.apellidos + ', ' + item.nombre)) {
+    if (confirm('¿Eliminar el vendedor ' + item.apellidos + ', ' + item.nombre)) {
         await deleteVendedor(item);
         init();
     }
@@ -57,18 +57,33 @@ async function borrarVendedor(item) {
 
 function crearItemVendedor(item) {
     let div = document.createElement('div');
-    div.textContent = item.apellidos + ', ' + item.nombre;
+    div.id = "fila-usuario"
+
+    let divNombre = document.createElement('div')
+    divNombre.id = "NombreYApellido"
+
+    let parr = document.createElement('p')
+    parr.textContent = item.apellidos + ', ' + item.nombre;
+
+    let contenedorBotones = document.createElement('div')
+    contenedorBotones.id = "contenedorBotones"
     let editBtn = document.createElement('button');
     editBtn.textContent = 'Editar';
+    editBtn.id = "editar"
+    editBtn.classList.add("botones");
     editBtn.onclick = function () {
         editarVendedor(item);
     }
     let delBtn = document.createElement('button');
     delBtn.textContent = 'Borrar';
+    delBtn.id = "borrar"
+    delBtn.classList.add("botones");
     delBtn.onclick = function () {
         borrarVendedor(item);
     }
-    div.prepend(editBtn, delBtn);
+    contenedorBotones.prepend(editBtn, delBtn);
+    divNombre.prepend(parr);
+    div.prepend(divNombre, contenedorBotones);
     return div;
 }
 
