@@ -24,6 +24,13 @@ form{
     justify-content: start;
     font-size: 30px;
 }
+
+#subtitulo-contacto{
+    display: flex;
+    font-size: 22px;
+    color: rgb(130, 0, 83, 0.99);
+}
+
 h4, h5{
     margin-top: 1rem;
     margin-bottom: -0.75rem;
