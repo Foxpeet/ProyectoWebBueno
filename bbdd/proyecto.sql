@@ -17,21 +17,26 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
+-- --------------------------------------------------------
+
 --
--- Estructura de tabla para la tabla `clientes`
+-- Estructura de tabla para la tabla `mediciones`
 --
 
-CREATE TABLE `clientes` (
+CREATE TABLE `mediciones` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(60) NOT NULL,
-  `apellidos` varchar(60) NOT NULL,
-  `password` varchar(60) NOT NULL
+  `humedad` int(11) NOT NULL,
+  `salinidad` int(11) NOT NULL,
+  `temperatura` int(11) NOT NULL,
+  `iluminacion` int(11) NOT NULL,
+  `fecha` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `clientes`
+-- Volcado de datos para la tabla `mediciones`
 --
 
+<<<<<<< HEAD
 INSERT INTO `clientes` (`id`, `nombre`, `apellidos`, `password`) VALUES
 (1, 'Mariano', 'Rajoy', '1234'),
 (2, 'Manolo', 'Mira', '1234');
@@ -55,6 +60,8 @@ CREATE TABLE `mediciones` (
 -- Volcado de datos para la tabla `mediciones`
 --
 
+=======
+>>>>>>> ebd6babae09a4521c3c64b636611017cc7d4c203
 INSERT INTO `mediciones` (`id`, `humedad`, `salinidad`, `temperatura`, `iluminacion`, `fecha`) VALUES
 (1, 60, 60, 20, 65, '2022-05-15'),
 (2, 50, 80, 30, 90, '2022-05-16');
