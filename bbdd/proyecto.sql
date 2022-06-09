@@ -37,9 +37,7 @@ CREATE TABLE `mediciones` (
 --
 
 <<<<<<< HEAD
-INSERT INTO `clientes` (`id`, `nombre`, `apellidos`, `password`) VALUES
-(1, 'Mariano', 'Rajoy', '1234'),
-(2, 'Manolo', 'Mira', '1234');
+
 
 -- --------------------------------------------------------
 
@@ -229,12 +227,6 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 
 --
--- Indices de la tabla `clientes`
---
-ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indices de la tabla `mediciones`
 --
 ALTER TABLE `mediciones`
@@ -270,12 +262,6 @@ ALTER TABLE `vertices`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
-
---
--- AUTO_INCREMENT de la tabla `clientes`
---
-ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `parcelas`
