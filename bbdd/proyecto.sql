@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-05-2022 a las 23:30:13
+-- Tiempo de generación: 20-05-2022 a las 10:46:27
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.4
 
@@ -34,7 +34,30 @@ CREATE TABLE `clientes` (
 
 INSERT INTO `clientes` (`id`, `nombre`, `apellidos`, `password`) VALUES
 (1, 'Mariano', 'Rajoy', '1234'),
-(4, 'Manolo', 'Mira', '1234');
+(2, 'Manolo', 'Mira', '1234');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `mediciones`
+--
+
+CREATE TABLE `mediciones` (
+  `id` int(11) NOT NULL,
+  `humedad` int(11) NOT NULL,
+  `salinidad` int(11) NOT NULL,
+  `temperatura` int(11) NOT NULL,
+  `iluminacion` int(11) NOT NULL,
+  `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `mediciones`
+--
+
+INSERT INTO `mediciones` (`id`, `humedad`, `salinidad`, `temperatura`, `iluminacion`, `fecha`) VALUES
+(1, 60, 60, 20, 65, '2022-05-15'),
+(2, 50, 80, 30, 90, '2022-05-16');
 
 -- --------------------------------------------------------
 
@@ -86,9 +109,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombre`, `apellidos`, `password`, `rol`) VALUES
-(1, 'Mariano', 'Rajoy', '1234', 'normal'),
+(1, 'Mariano', 'Rajoy', '1234', 'admin'),
 (2, 'Manolo', 'Mira', '1234', 'normal'),
-(3, 'admin', '', '1234', 'admin');
+(3, 'admin', '', '1234', 'normal');
 
 -- --------------------------------------------------------
 
@@ -107,10 +130,10 @@ CREATE TABLE `usuarios_parcelas` (
 --
 
 INSERT INTO `usuarios_parcelas` (`id`, `usuario`, `parcela`) VALUES
-(1, 1, 1),
-(2, 1, 2),
-(3, 2, 3),
-(4, 2, 4);
+(1, 2, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 3, 4);
 
 -- --------------------------------------------------------
 
@@ -205,6 +228,12 @@ ALTER TABLE `clientes`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `mediciones`
+--
+ALTER TABLE `mediciones`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `parcelas`
 --
 ALTER TABLE `parcelas`
@@ -239,7 +268,7 @@ ALTER TABLE `vertices`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `parcelas`
@@ -251,7 +280,7 @@ ALTER TABLE `parcelas`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios_parcelas`
@@ -268,6 +297,12 @@ ALTER TABLE `vertices`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `mediciones`
+--
+ALTER TABLE `mediciones`
+  ADD CONSTRAINT `mediciones_ibfk_1` FOREIGN KEY (`id`) REFERENCES `usuarios_parcelas` (`parcela`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `usuarios_parcelas`

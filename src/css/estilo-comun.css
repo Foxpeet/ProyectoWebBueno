@@ -16,7 +16,7 @@ body {
     background: whitesmoke;
     margin: 0px;
     padding: 0px;
-    display: flex;
+    display:flex;
     flex-direction: column;
 }
 
@@ -43,6 +43,7 @@ ul {
     height: 80px;
     align-items: center;
     position: fixed;
+    z-index: 2;
 }
 
 #logo {
@@ -65,7 +66,6 @@ ul {
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-
 #login-y-menu {
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@ ul {
 * Comienzo de Menu desplegable -------------------------------------
 */
 
-.respmenu a {
+.respmenu a, .respmenu button {
     list-style-type: style none;
     color: inherit;
     text-decoration: none;
@@ -144,7 +144,7 @@ ul {
     display: none;
 }
 
-.respmenu a:hover {
+.respmenu a:hover, .respmenu button:hover {
     background: rgb(233, 233, 233)
 }
 
@@ -171,7 +171,7 @@ ul {
     color: white;
 }
 
-.footer p {
+.footer p{
     font-size: 16px;
 }
 
@@ -214,87 +214,77 @@ ul {
 /**
 * botones y redirecciones -------------------------------------
 */
-input {
+input{
     accent-color: rgb(130, 0, 83, 0.99);
     caret-color: rgb(130, 0, 83, 0.99);
-    padding: 0px;
 }
-
 input[type="text"]:hover,
 input[type="number"]:hover,
-input[type="email"]:hover {
-    border: 1px solid rgb(130, 0, 83, 0.99);
-    padding: 0px;
+input[type="email"]:hover{
+    border: 0.5px solid rgb(130, 0, 83, 0.99);
 }
-
 input[type="text"]:focus,
 input[type="number"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus{
     box-shadow: 1.5px 1.5px rgb(130, 0, 83, 0.99);
-    padding: 0px;
 }
 
-.boton1 {
-    height: 50px;
-    width: 120px;
-    background: rgb(130, 0, 83, 0.99);
-    border: 1px solid #000000;
+.boton1{
+    height:50px;
+    width:120px;
+    background:rgb(130, 0, 83, 0.99);
+    border:1px solid #000000;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius:5px;
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.boton1:hover {
-    background-color: rgba(87, 10, 59, 0.99);
-    border: 1px solid gray;
+.boton1:hover{
+    background-color:rgba(87, 10, 59, 0.99);
+    border:1px solid gray;
     font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
 }
 
-.boton2 {
-    height: 50px;
-    width: 120px;
-    background: #ffffff;
-    border: 1px solid #000000;
+.boton2{
+    height:50px;
+    width:120px;
+    background:#ffffff;
+    border:1px solid #000000;
     color: rgb(130, 0, 83, 0.99);
-    border-radius: 5px;
+    border-radius:5px;
     font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial,Helvetica,sans-serif;
 }
-
-.boton2:hover {
-    background-color: rgb(236, 236, 236);
-    border: 1px solid gray;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
+.boton2:hover{
+    background-color:rgb(236, 236, 236);
+    border:1px solid gray;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
 /**
 * sections y contenido -------------------------------------
 */
 
-section {
-    background-size: cover;
+section{
+    background-size:cover;
     background-position: center;
 }
 
-.section-info {
-    color: white;
+.section-info{
+    color:white;
 }
-
-.section-action {
+.section-action{
     color: black;
 }
 
-.icono {
+.icono{
     border: 1px solid black;
     border-radius: 100%;
     background-color: whitesmoke;
 }
 
-.cuadro {
-    display: flex;
+.cuadro{
+    display:flex;
     flex-direction: column;
     max-width: 500px;
     width: 85%;
@@ -306,31 +296,21 @@ section {
     padding-left: 2%;
 }
 
-h1 {
-    color: rgb(130, 0, 83, 0.99);
+h1{
+    color:rgb(130, 0, 83, 0.99);
     font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
 }
-
-h2,
-h3,
-h4,
-h5,
-h6,
-label,
-button {
+h2, h3, h4, h5, h6{
     font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 h2 {
     font-size: 30px;
 }
-
-h3 {
+h3{
     font-size: 25px;
 }
-
-p {
+p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
@@ -359,12 +339,11 @@ p {
     padding: 0px;
     margin: 0px;
 }
-
-.espacio-descubrir a {
+.espacio-descubrir a{
     text-decoration: none;
 }
 
-.descubrir-mas {
+.descubrir-mas{
     color: white;
     padding: 0px;
     margin: 0px;
@@ -373,4 +352,28 @@ p {
 .descubrir-mas-img {
     width: 50px;
     height: 25px;
+}
+
+#cerrarsesion{
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid grey;
+    left: 42%;
+    top: 15%;
+    display: none;
+
+}
+
+#hascerradosesion{
+    text-align: center;
+}
+
+#botoncerrar{
+    width: 85%;
+    height: 40%;
+    margin-left: 8%;
 }

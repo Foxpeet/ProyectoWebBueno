@@ -2,12 +2,12 @@
     width: 100%;
     height: 1000px;
     margin: 0 auto;
-    background-image:url("../images/img_Campo1/fondo_userPage.jpg");
+    background-image:url("../images/fondo_userPage.jpg");
     background-position: center;
 }
 
 .cuadro{
-    height: 70%;
+    height: 38%;
     max-width: 100%;
     width: 80%;
     padding-top: 2%;
@@ -18,130 +18,64 @@
     gap: 0;
     
 }
+
 #titulo-User{
     margin-top: 100px;
     font-size: 25px;
     color: white;
 }
 
-#parte_derecha_y_abajo{
-    width: 50%;
-}
-#parte_izquierda_y_arriba {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media(max-width:700px){
-    .cuadro{
-        flex-direction: column;
-    }
-
-    #parte_derecha_y_abajo {
-        width: 100%;
-        height: 28%;
-    }
-    
-    #parte_izquierda_y_arriba {
-        width: 100%;
-        height: 72%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .cuadro img {
-        display: none;
-        width: 80%;
-        height: 10%;
-        align-items: flex-end;
-    }
-
-    .cont-menu {
-        height: 200px;
-    }
-}
-/* Comienzo Menú acordeón */
-
-
-.cont-menu{
-    margin: 0 auto;
-    align-items: center;
-    width: 50%;
+.chart-container {
+    position: relative;
+    top:4%;
+    width: 38vw;
+    height: 42.5vh;
+    border: solid 1px black;
+    margin: 0;
 }
 
-.cont-menu .cont-enlace{
-    box-shadow: 0px 0px 2px 1px grey;
-}
-ul{
-    list-style:none
-}
-
-/* Estilos para las opciones */
-.cont-menu .cont-enlace .cultivos{
-    display: flex;
-    justify-content: space-between;
-    background-color: #820053;
-    color: white;
-    padding: 13px 15px;
-    font-size: 22px;
-    cursor: pointer;
-    user-select: none;
-    margin-right: auto;
-
-}
-
-/* Estilos para el simbolo '+' */
-.cont-menu .cont-enlace .cultivos .icono{
-    background-color: white;
-    color: #009688;
-    font-weight: bold;
-    font-size: 22px;
-    text-align: center;
-    width: 26px;
-    border-radius: 5px;
-}
-
-/* Efecto para aparacer y desaparecer enlaces */
-.cont-menu .cont-enlace .enlace{
-    height: 0;
-    overflow: hidden;
-}
-
-.cont-menu .cont-enlace .animation{
-    height: 100%;
-}
-
-/* Estilos para los enlaces */
-.cont-menu .cont-enlace .enlace button{
-    width: 100%;
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgba(0,0,0,.8);
-    background-color: white;
-    border: 1px solid grey;
-
-}
 #mapa {
-    width: 100%;
-    margin: 0 auto;
-    height: 70%;
+    width: 40%;
+    margin: -100;
+    height: 30%;
     background-color: blue;
+    position:static;
+    top:-39.5%;
+    right:-50%;
 }
 
 #selector-parcelas {
     width: 100%;
+    margin: 0 auto;
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: .5cm;
+    top:-39%;
+    right:10%;
+    text-align: end;
+    
 }
-.cont-menu .cont-enlace .enlace button:hover{
-    background-color: rgb(153, 152, 152);
-    color: white;
+
+@media(max-width:600px){
+    .cuadro{
+        height: 70%;
+    }
+    #mapa{
+        top: -32%;
+        right: -10%;
+        width: 80%;
+    }
+    #selector-parcelas {
+        flex-direction: row;
+        top: -65%;
+        right: -30%;
+    }
+    .chart-container {
+        width: 80vw;
+    }
 }
-/* Final Menú acordeón */
+
 
 .cuadro img{
     display: none;

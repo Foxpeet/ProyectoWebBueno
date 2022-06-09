@@ -28,6 +28,9 @@
     display: flex;
     justify-content: space-between;
 }
+input[type="text"]::placeholder{
+    font-size: large;
+}
 
 input[type="text"] {
     border: 1px solid black;
@@ -39,11 +42,13 @@ input[type="text"]:focus {
 
 #form-vendedor {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-166px, -86px);
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    top: 30%;
+    left: 35%;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
-    padding: 2rem;
+    padding: 1rem;
     display: none;
     background-color: white;
 
@@ -51,16 +56,50 @@ input[type="text"]:focus {
 
 form {
     display: flex;
-    width: 300px;
+    width: 100%;
+    height: 100%;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-evenly;
     border-radius: 3px;
 }
-
-label {
-    width: 100px;
+form div input{
+    width: 50%;
+    height: 1rem;
 }
+label {
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#separador{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#separadorBoton{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+@media(max-width:800px){
+    #form-vendedor{
+        width: 40%;
+        top: 30%;
+        left: 28%;
+    }
+    #separador{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    form div input{
+        width:90%
+    }
+    #separadorBoton{
+        gap: 0.5rem;
+    }
+}
+
 
 #buscar {
     height: 95%;
@@ -72,7 +111,9 @@ label {
     width: 30%;
     margin: 0;
 }
-
+#usuario_nuevo:hover{
+    cursor: pointer;
+}
 #listado-vendedores {
     display: flex;
     flex-direction: column;
@@ -89,14 +130,24 @@ label {
 
 #editar {
     order: 1;
+    background-image: url(../images/editar.png);
 }
 
 #borrar {
     order: 1;
+    background-image: url(../images/borrar.png);
 }
 
 .botones {
-    background-color: red;
+    border: 0;
+    color: transparent;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+
+}
+.botones:hover{
+    cursor: pointer;
 }
 
 #NombreYApellido {
@@ -106,6 +157,7 @@ label {
     flex: 1 1 auto;
     height: 100%;
     align-items: center;
+    border-right: 0;
 }
 
 #contenedorBotones {
@@ -117,16 +169,14 @@ label {
     justify-content: space-evenly;
     width: 30%;
 }
-
 #listado-vendedores p {
     margin: 0;
     height: fit-content;
     width: 100%;
     text-align: center;
 }
-
-
 h3 {
     margin-top: 1rem;
     color: rgb(130, 0, 83, 0.99);
 }
+
