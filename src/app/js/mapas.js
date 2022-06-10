@@ -47,6 +47,45 @@ function crearSelector() {
     })
 }
 
+async function crearSondas(index){
+    let parcela = parcelas[index]
+    let consulta = await fetch("api/v1.0/parcela/" + parcela.parcela + "/vertices");
+    let vertices = await consulta.json();
+    parcela.marker1 = new google.maps.Marker({
+        // position: {lat:38.9981629,  lng:-0.1720151}, 
+        position: vertices[0],
+        map: map,
+    })
+    parcela.marker2 = new google.maps.Marker({
+        position: vertices[1],
+        map: map,
+    })
+    parcela.marker3 = new google.maps.Marker({
+        position: vertices[2],
+        map: map,
+    })
+    parcela.marker4 = new google.maps.Marker({
+        position: vertices[3],
+        map: map,
+    })
+    parcela.marker5 = new google.maps.Marker({
+        position: vertices[4],
+        map: map,
+    })
+}
+async function mostrarOcultarSonda(index, mostrar){
+    let parcela = parcelas[index]
+    if(mostrar){    
+        crearSondas(index)
+    } else {
+        parcela.marker1.setMap(null)
+        parcela.marker2.setMap(null)
+        parcela.marker3.setMap(null)
+        parcela.marker4.setMap(null)
+        parcela.marker5.setMap(null)
+    }
+    ajustarMapa()
+}
 async function mostrarOcultarParcela(index, mostrar) {
     let parcela = parcelas[index];
     if (mostrar) {
@@ -68,6 +107,7 @@ async function mostrarOcultarParcela(index, mostrar) {
     } else {
         if (parcela.polygon) parcela.polygon.setMap(null);
     }
+    mostrarOcultarSonda(index, mostrar)
     ajustarMapa()
 }
 

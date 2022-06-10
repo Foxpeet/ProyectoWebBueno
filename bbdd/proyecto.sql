@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-05-2022 a las 10:46:27
+-- Tiempo de generación: 10-06-2022 a las 18:39:58
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.4
 
@@ -17,8 +17,6 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
--- --------------------------------------------------------
-
 --
 -- Estructura de tabla para la tabla `mediciones`
 --
@@ -36,32 +34,6 @@ CREATE TABLE `mediciones` (
 -- Volcado de datos para la tabla `mediciones`
 --
 
-<<<<<<< HEAD
-INSERT INTO `clientes` (`id`, `nombre`, `apellidos`, `password`) VALUES
-(1, 'Mariano', 'Rajoy', '1234'),
-(2, 'Manolo', 'Mira', '1234');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `mediciones`
---
-
-CREATE TABLE `mediciones` (
-  `id` int(11) NOT NULL,
-  `humedad` int(11) NOT NULL,
-  `salinidad` int(11) NOT NULL,
-  `temperatura` int(11) NOT NULL,
-  `iluminacion` int(11) NOT NULL,
-  `fecha` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `mediciones`
---
-
-=======
->>>>>>> ebd6babae09a4521c3c64b636611017cc7d4c203
 INSERT INTO `mediciones` (`id`, `humedad`, `salinidad`, `temperatura`, `iluminacion`, `fecha`) VALUES
 (1, 60, 60, 20, 65, '2022-05-15'),
 (2, 50, 80, 30, 90, '2022-05-16');
@@ -83,19 +55,10 @@ CREATE TABLE `parcelas` (
 --
 
 INSERT INTO `parcelas` (`id`, `nombre`, `color`) VALUES
-(1, 'Parcela nº1', 'EBA372'),
-(2, 'Parcela nº2', 'EB332E'),
-(3, 'Parcela nº3', '5D52F5'),
-(4, 'Parcela nº4', '58D69D'),
-(6, 'Sonda nº1', 'FFFFFF'),
-(7, 'Sonda nº2', 'FFFFFF'),
-(8, 'Sonda nº3', 'FFFFFF'),
-(9, 'Sonda nº4', 'FFFFFF'),
-(10, 'Sonda nº5', 'FFFFFF'),
-(11, 'Sonda nº6', 'FFFFFF'),
-(12, 'Sonda nº7', 'FFFFFF'),
-(13, 'Sonda nº8', 'FFFFFF'),
-(14, 'Sonda nº9', 'FFFFFF');
+(1, 'Naranjos', 'EBA372'),
+(2, 'Tomates', 'EB332E'),
+(3, 'Parcela nº4', '5D52F5'),
+(4, 'Parcela nº4', '58D69D');
 
 -- --------------------------------------------------------
 
@@ -139,7 +102,7 @@ CREATE TABLE `usuarios_parcelas` (
 INSERT INTO `usuarios_parcelas` (`id`, `usuario`, `parcela`) VALUES
 (1, 2, 1),
 (2, 2, 2),
-(3, 3, 3),
+(3, 3, 1),
 (4, 3, 4);
 
 -- --------------------------------------------------------
@@ -229,12 +192,6 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 
 --
--- Indices de la tabla `clientes`
---
-ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indices de la tabla `mediciones`
 --
 ALTER TABLE `mediciones`
@@ -272,12 +229,6 @@ ALTER TABLE `vertices`
 --
 
 --
--- AUTO_INCREMENT de la tabla `clientes`
---
-ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
-
---
 -- AUTO_INCREMENT de la tabla `parcelas`
 --
 ALTER TABLE `parcelas`
@@ -287,7 +238,7 @@ ALTER TABLE `parcelas`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios_parcelas`
