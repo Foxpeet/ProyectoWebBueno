@@ -34,6 +34,33 @@ CREATE TABLE `mediciones` (
 -- Volcado de datos para la tabla `mediciones`
 --
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `mediciones`
+--
+
+CREATE TABLE `mediciones` (
+  `id` int(11) NOT NULL,
+  `humedad` int(11) NOT NULL,
+  `salinidad` int(11) NOT NULL,
+  `temperatura` int(11) NOT NULL,
+  `iluminacion` int(11) NOT NULL,
+  `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `mediciones`
+--
+
+=======
+>>>>>>> ebd6babae09a4521c3c64b636611017cc7d4c203
+>>>>>>> d91292dca1fe556ab4634eed31c38b9a250d43c9
 INSERT INTO `mediciones` (`id`, `humedad`, `salinidad`, `temperatura`, `iluminacion`, `fecha`) VALUES
 (1, 60, 60, 20, 65, '2022-05-15'),
 (2, 50, 80, 30, 90, '2022-05-16');
