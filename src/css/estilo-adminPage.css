@@ -19,6 +19,7 @@
     margin-bottom: 15%;
     padding: 1rem;
     margin-top: 8rem;
+    min-height: 510px;
 }
 
 #buscador {
@@ -97,6 +98,14 @@ label {
     }
     #separadorBoton{
         gap: 0.5rem;
+    }
+    #cerrarsesion{
+        left: 25%;
+    }
+}
+@media(max-width:500px){
+    #cerrarsesion{
+        left: 10%;
     }
 }
 

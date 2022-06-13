@@ -26,12 +26,21 @@
                 <i class="fas fa-times"></i>
                 <nav>
                     <ul>
-                        <li><a href="../index.html">Cerrar sesión</a></li>
+                        <li><button id="cerrador" onclick="mensajeOut()">Cerrar sesión</button></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
+    <!-------------------------------------------- Mensaje cerrar sesion-------------------------------------------------------->
+    <div class="cuadro" id="cerrarsesion">
+        <h2 class="hascerradosesion" id="hascerradosesion">Has cerrado sesión correctamente.</h2>
+        <button class="boton1" id="botoncerrar" onclick="irlanding()">Volver al inicio</button>
+    </div>
+    <!-------------------------------------------- Fin Mensaje cerrar sesion----------------------------------------------------->
+
+
     <div class="vistaAdmin" id="vistaAdmin">
         <div class="cuadro">
             <!-- imagen del fondo de vistaAdmin-->
@@ -90,6 +99,7 @@
 
     <script src="js/vendedoresREST.js"></script>
     <script src="js/vendedores.js"></script>
+    <script src="js/corrarsesionmensaje.js"></script>
 </body>
 
 </html>

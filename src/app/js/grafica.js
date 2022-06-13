@@ -4,41 +4,40 @@ let datos = {
         {
             label: 'Humedad',
             data: [60, 70, 86, 40, 50],
-            fill: true,
-            backgroundColor: 'rgba(11, 8, 221, .5)',
-            borderColor: 'rgb(255,110,86)',
-            borderDash: [10, 4, 3, 4],
-            tension: .3,
+            // fill: true,
+            // backgroundColor: 'rgba(11, 8, 221, .5)',
+            borderColor: 'rgb(119,145,255)',
+            // borderDash: [10, 4, 3, 4],
             pointStyle: 'circle',
             pointRadius: 6,
         },
         {
             label: 'Salinidad',
             data: [60, 36, 13, 50, 40],
-            fill: true,
-            backgroundColor: 'rgba(184, 122, 13, .5)',
-            borderColor: 'rgb(119,145,255)',
-            borderDash: [10, 4, 3, 4],
+            // fill: true,
+            // backgroundColor: 'rgba(184, 122, 13, .5)',
+            borderColor: 'rgb(80,218,38)',
+            // borderDash: [10, 4, 3, 4],
             pointStyle: 'cirlce',
             pointRadius: 6,
         },
         {
             label: 'Temperatura',
             data: [20, 25, 12, 30, 25],
-            fill: true,
-            backgroundColor: 'rgba(207, 21, 12, .5)',
-            borderColor: 'rgb(119,145,255)',
-            borderDash: [10, 4, 3, 4],
+            // fill: true,
+            // backgroundColor: 'rgba(207, 21, 12, .5)',
+            borderColor: 'rgb(255,110,86)',
+            // borderDash: [10, 4, 3, 4],
             pointStyle: 'cirlce',
             pointRadius: 6,
         },
         {
             label: 'Iluminacion',
             data: [50, 67, 9, 93, 69],
-            fill: true,
-            backgroundColor: 'rgba(231, 224, 13, .5)',
-            borderColor: 'rgb(119,145,255)',
-            borderDash: [10, 4, 3, 4],
+            // fill: true,
+            // backgroundColor: 'rgba(231, 224, 13, .5)',
+            borderColor: 'rgb(248, 247, 38)',
+            // borderDash: [10, 4, 3, 4],
             pointStyle: 'circle',
             pointRadius: 6,
         },
@@ -61,6 +60,7 @@ let opciones = {
         title: {
             display: true,
             text: 'Mediciones última semana'
+            // titulo segun el sensor
         },
         tooltip: {
             backgroundColor: '#fff',
@@ -80,3 +80,18 @@ let miGrafica = new Chart(ctx, {
     data: datos,
     options: opciones
 });
+
+async function initGraph() {
+
+    let urlParams = new URLSearchParams(window.location.search);
+    let usuario = urlParams.get("usuario");
+    if (!usuario) usuario = 1;
+
+    let consulta = await fetch("api/v1.0/parcela?usuario=" + usuario);
+    parcelas = await consulta.json();
+    console.log(parcelas);
+}
+
+async function mostrarGrafica(index){
+    console.log('ey perro, funciono')
+}

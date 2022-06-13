@@ -32,7 +32,7 @@
                 <i class="fas fa-times"></i>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Cerrar sesión</a></li>
+                        <li><button id="cerrador" onclick="mensajeOut()">Cerrar sesión</button></li>
                     </ul>
                 </nav>
             </div>
@@ -40,12 +40,30 @@
     </header>
     <!-- fin header -->
 
+    <!-------------------------------------------- Mensaje cerrar sesion-------------------------------------------------------->
+    <div class="cuadro" id="cerrarsesion">
+        <h2 class="hascerradosesion" id="hascerradosesion">Has cerrado sesión correctamente.</h2>
+        <button class="boton1" id="botoncerrar" onclick="irlanding()">Volver al inicio</button>
+    </div>
+    <!-------------------------------------------- Fin Mensaje cerrar sesion----------------------------------------------------->
+
     <section class="user">
         <h1 class="titulo" id="titulo-User">¡Bienvenido M.Rajoy!</h1>
+        
 
         <div class="cuadro" id="cuadro">
             <div class="chart-container">
+                <div id="pasos_grafica">
+                    <h3>PASOS PARA VER LAS GRÁFICAS:</h3>
+                    <li>Desmarque el campo que no desee ver</li>
+                    <li>Elija la sonda del cultivo que quiera para observar los datos</li>
+                </div>
+
                 <canvas id="chart"></canvas>
+
+                <div id="explicacion">
+                    <li>Para dejar de ver un parámetro, desmarque su casilla</li>
+                </div>
             </div>
         </div>
 
@@ -55,8 +73,7 @@
 
     <script src="app/js/mapas.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-    <script src="app/js/grafica.js"></script>
-
+    <script src="js/corrarsesionmensaje.js"></script>
 </body>
 
 </html>

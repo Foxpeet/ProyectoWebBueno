@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     gap: 0;
-    
+    min-height: 410px;
 }
 
 #titulo-User{
@@ -29,53 +29,87 @@
     position: relative;
     top:4%;
     width: 38vw;
-    height: 42.5vh;
-    border: solid 1px black;
+    height: 37vh;
+    /* border: solid 1px black; */
     margin: 0;
+}
+
+#pasos_grafica{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pasos_grafica h3{
+    font-size: 31px;
+    text-align: center;
+    color: rgb(130, 0, 83);
+    text-decoration: underline;
+}
+
+#pasos_grafica li{
+    margin: 1rem;
+    font-size: 24px;
+    margin-left: 3.5rem;
+}
+
+#explicacion{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3.5rem;
+    padding-top: 2rem;
+    display: none;
+    
 }
 
 #mapa {
     width: 40%;
     margin: -100;
-    height: 30%;
-    background-color: blue;
+    height: 40%;
+    background-color: transparent;
     position:static;
-    top:-39.5%;
+    top:-44%;
     right:-50%;
 }
 
 #selector-parcelas {
-    width: 100%;
+    width: 40%;
     margin: 0 auto;
     display: flex;
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.5rem;
     gap: .5cm;
-    top:-39%;
-    right:10%;
-    text-align: end;
-    
+    top:-46%;
+    right:-20%;
+    text-align: end; 
 }
 
-@media(max-width:600px){
+@media(max-width:800px){
     .cuadro{
-        height: 70%;
+        height: 75%;
     }
     #mapa{
         top: -32%;
         right: -10%;
         width: 80%;
+        height: 30%;
     }
     #selector-parcelas {
+        width: 80%;
         flex-direction: row;
-        top: -65%;
-        right: -30%;
+        justify-content: space-around;
+        top: -68%;
+        right: 2%;
     }
     .chart-container {
         width: 80vw;
+        height: 30vh;
+    }
+    #cerrarsesion{
+        left: 22%;
     }
 }
-
 
 .cuadro img{
     display: none;

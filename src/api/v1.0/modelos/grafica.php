@@ -1,26 +1,21 @@
 <?php
+
+if(!isset($peticion)) die();
+
 require "../includes/conexion.php";
 
-if ($peticion->metodo() === "GET") {
+$IDSonda = $_POST['sondas'];
 
-    $sql = "SELECT * FROM `mediciones`;";
-
-    $result = mysqli_query($conn, $sql);
-
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            $mediciones = [];
-            $mediciones['tempertatura'] = $row['temperatura'];
-            $mediciones['salinidad'] = $row['salinidad'];
-            $mediciones['humedad'] = $row['humedad'];
-            $mediciones['iluminacion'] = $row['iluminacion'];
-            $mediciones['fecha'] = $row['fecha'];
-
-            array_push($salida, $mediciones);
-        }
-    } else {
-        //mandamos un error 401 que es que no estas autorizado
-        http_response_code(401);
-        die();
-    }
+$datos = array();
+$sql = "SELECT * FROM vista_medicion_sonda WHERE idSonda= $IDSonda";
+$query = mysqli_query($conn, $sql);  
+while ($row = mysqli_fetch_assoc($query)){ 
+    $datos['temp'] [] = $row['temperatura'];
+    $datos['hum'] [] = $row['humedad'];
+    $datos['salin'] [] = $row['salinidad'];
+    $datos['ilumin'] [] = $row['iluminacion'];
+    $datos['hora'] [] = $row['hora'];
 }
+echo json_encode($datos);
+
+?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-06-2022 a las 18:39:58
+-- Tiempo de generación: 12-06-2022 a las 15:05:32
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.4
 
@@ -27,43 +27,85 @@ CREATE TABLE `mediciones` (
   `salinidad` int(11) NOT NULL,
   `temperatura` int(11) NOT NULL,
   `iluminacion` int(11) NOT NULL,
-  `fecha` date NOT NULL
+  `sonda` int(11) NOT NULL,
+  `hora` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `mediciones`
 --
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `mediciones`
---
-
-CREATE TABLE `mediciones` (
-  `id` int(11) NOT NULL,
-  `humedad` int(11) NOT NULL,
-  `salinidad` int(11) NOT NULL,
-  `temperatura` int(11) NOT NULL,
-  `iluminacion` int(11) NOT NULL,
-  `fecha` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `mediciones`
---
-
-=======
->>>>>>> ebd6babae09a4521c3c64b636611017cc7d4c203
->>>>>>> d91292dca1fe556ab4634eed31c38b9a250d43c9
-INSERT INTO `mediciones` (`id`, `humedad`, `salinidad`, `temperatura`, `iluminacion`, `fecha`) VALUES
-(1, 60, 60, 20, 65, '2022-05-15'),
-(2, 50, 80, 30, 90, '2022-05-16');
+INSERT INTO `mediciones` (`id`, `humedad`, `salinidad`, `temperatura`, `iluminacion`, `sonda`, `hora`) VALUES
+(0, 50, 82, 22, 10, 1, '03:00:00'),
+(1, 60, 60, 26, 40, 1, '07:00:00'),
+(2, 50, 60, 34, 80, 1, '11:00:00'),
+(3, 80, 70, 27, 30, 1, '17:00:00'),
+(4, 60, 47, 24, 64, 1, '23:00:00'),
+(5, 32, 86, 26, 9, 2, '03:00:00'),
+(6, 48, 75, 22, 25, 2, '07:00:00'),
+(7, 26, 55, 26, 38, 2, '11:00:00'),
+(8, 79, 57, 26, 84, 2, '17:00:00'),
+(9, 48, 75, 22, 25, 2, '23:00:00'),
+(10, 69, 97, 17, 6, 3, '03:00:00'),
+(11, 58, 42, 19, 40, 3, '07:00:00'),
+(12, 79, 32, 23, 68, 3, '11:00:00'),
+(13, 56, 46, 21, 42, 3, '17:00:00'),
+(14, 79, 48, 16, 27, 3, '23:00:00'),
+(15, 93, 72, 13, 26, 4, '03:00:00'),
+(16, 79, 64, 17, 37, 4, '07:00:00'),
+(17, 59, 64, 20, 53, 4, '11:00:00'),
+(18, 46, 84, 23, 84, 4, '17:00:00'),
+(19, 38, 58, 21, 96, 4, '23:00:00'),
+(20, 49, 67, 17, 48, 5, '03:00:00'),
+(21, 76, 79, 14, 24, 5, '07:00:00'),
+(22, 68, 78, 16, 32, 5, '11:00:00'),
+(23, 51, 64, 24, 63, 5, '17:00:00'),
+(24, 42, 53, 18, 35, 5, '23:00:00'),
+(25, 79, 75, 16, 25, 6, '03:00:00'),
+(26, 65, 68, 19, 37, 6, '07:00:00'),
+(27, 53, 62, 20, 59, 6, '11:00:00'),
+(28, 39, 62, 23, 84, 6, '17:00:00'),
+(29, 53, 72, 19, 47, 6, '23:00:00'),
+(30, 76, 52, 15, 24, 7, '03:00:00'),
+(31, 68, 56, 16, 37, 7, '07:00:00'),
+(32, 52, 58, 21, 49, 7, '11:00:00'),
+(33, 42, 43, 23, 69, 7, '17:00:00'),
+(34, 74, 68, 18, 36, 7, '23:00:00'),
+(35, 85, 67, 17, 25, 8, '03:00:00'),
+(36, 68, 43, 21, 35, 8, '07:00:00'),
+(37, 54, 46, 23, 48, 8, '11:00:00'),
+(38, 61, 63, 25, 79, 8, '17:00:00'),
+(39, 82, 74, 19, 35, 8, '23:00:00'),
+(40, 86, 84, 16, 24, 9, '03:00:00'),
+(41, 73, 63, 18, 37, 9, '07:00:00'),
+(42, 63, 58, 20, 47, 9, '11:00:00'),
+(43, 46, 68, 26, 70, 9, '17:00:00'),
+(44, 69, 68, 22, 53, 9, '23:00:00'),
+(45, 86, 79, 16, 28, 10, '03:00:00'),
+(46, 75, 73, 19, 36, 10, '07:00:00'),
+(47, 74, 68, 21, 48, 10, '11:00:00'),
+(48, 53, 63, 25, 85, 10, '17:00:00'),
+(49, 75, 64, 18, 32, 10, '23:00:00'),
+(50, 78, 64, 17, 21, 11, '03:00:00'),
+(51, 64, 64, 19, 35, 11, '07:00:00'),
+(52, 57, 62, 21, 46, 11, '11:00:00'),
+(53, 54, 71, 25, 78, 11, '17:00:00'),
+(54, 78, 65, 20, 41, 11, '23:00:00'),
+(55, 78, 65, 20, 41, 12, '03:00:00'),
+(56, 65, 64, 17, 35, 12, '07:00:00'),
+(57, 74, 58, 20, 47, 12, '11:00:00'),
+(58, 52, 74, 24, 76, 12, '17:00:00'),
+(59, 75, 84, 19, 32, 12, '23:00:00'),
+(60, 75, 84, 19, 32, 13, '03:00:00'),
+(61, 83, 74, 17, 26, 13, '07:00:00'),
+(62, 73, 69, 20, 42, 13, '11:00:00'),
+(63, 63, 75, 24, 79, 13, '17:00:00'),
+(64, 72, 63, 20, 52, 13, '23:00:00'),
+(65, 84, 63, 16, 52, 14, '03:00:00'),
+(66, 78, 73, 20, 32, 14, '07:00:00'),
+(67, 71, 68, 21, 45, 14, '11:00:00'),
+(68, 58, 63, 25, 79, 14, '17:00:00'),
+(69, 94, 61, 19, 42, 14, '23:00:00');
 
 -- --------------------------------------------------------
 
@@ -84,8 +126,41 @@ CREATE TABLE `parcelas` (
 INSERT INTO `parcelas` (`id`, `nombre`, `color`) VALUES
 (1, 'Naranjos', 'EBA372'),
 (2, 'Tomates', 'EB332E'),
-(3, 'Parcela nº4', '5D52F5'),
-(4, 'Parcela nº4', '58D69D');
+(3, 'Olivos', '58D69D'),
+(4, 'Arroz', 'DCB434');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `sondas`
+--
+
+CREATE TABLE `sondas` (
+  `id` int(11) NOT NULL,
+  `lat` decimal(10,7) NOT NULL,
+  `lng` decimal(10,7) NOT NULL,
+  `parcela` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `sondas`
+--
+
+INSERT INTO `sondas` (`id`, `lat`, `lng`, `parcela`) VALUES
+(1, '38.9980890', '-0.1804260', 1),
+(2, '38.9977440', '-0.1803920', 1),
+(3, '38.9980000', '-0.1809360', 1),
+(4, '38.9971780', '-0.1781820', 2),
+(5, '38.9977940', '-0.1777330', 2),
+(6, '38.9980150', '-0.1784950', 2),
+(7, '38.9976110', '-0.1789460', 2),
+(8, '38.9921340', '-0.1731330', 3),
+(9, '38.9922500', '-0.1717010', 3),
+(10, '38.9913490', '-0.1714110', 3),
+(11, '38.9910990', '-0.1729880', 3),
+(12, '38.9897460', '-0.1744630', 4),
+(13, '38.9891690', '-0.1736190', 4),
+(14, '38.9902200', '-0.1753790', 4);
 
 -- --------------------------------------------------------
 
@@ -129,7 +204,7 @@ CREATE TABLE `usuarios_parcelas` (
 INSERT INTO `usuarios_parcelas` (`id`, `usuario`, `parcela`) VALUES
 (1, 2, 1),
 (2, 2, 2),
-(3, 3, 1),
+(3, 3, 3),
 (4, 3, 4);
 
 -- --------------------------------------------------------
@@ -171,6 +246,23 @@ INSERT INTO `vertices` (`id`, `lat`, `lng`, `parcela`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura Stand-in para la vista `vista_medicion_sonda`
+-- (Véase abajo para la vista actual)
+--
+CREATE TABLE `vista_medicion_sonda` (
+`idSonda` int(11)
+,`lat` decimal(10,7)
+,`lng` decimal(10,7)
+,`humedad` int(11)
+,`salinidad` int(11)
+,`temperatura` int(11)
+,`iluminacion` int(11)
+,`hora` time
+);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura Stand-in para la vista `vista_parcelas_con_vertices`
 -- (Véase abajo para la vista actual)
 --
@@ -199,6 +291,15 @@ CREATE TABLE `vista_propiedad_parcelas` (
 -- --------------------------------------------------------
 
 --
+-- Estructura para la vista `vista_medicion_sonda`
+--
+DROP TABLE IF EXISTS `vista_medicion_sonda`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vista_medicion_sonda`  AS SELECT `sondas`.`id` AS `idSonda`, `sondas`.`lat` AS `lat`, `sondas`.`lng` AS `lng`, `mediciones`.`humedad` AS `humedad`, `mediciones`.`salinidad` AS `salinidad`, `mediciones`.`temperatura` AS `temperatura`, `mediciones`.`iluminacion` AS `iluminacion`, `mediciones`.`hora` AS `hora` FROM (`sondas` join `mediciones` on(`mediciones`.`sonda` = `sondas`.`id`))  ;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura para la vista `vista_parcelas_con_vertices`
 --
 DROP TABLE IF EXISTS `vista_parcelas_con_vertices`;
@@ -222,13 +323,21 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 -- Indices de la tabla `mediciones`
 --
 ALTER TABLE `mediciones`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_sondas_medicion` (`sonda`);
 
 --
 -- Indices de la tabla `parcelas`
 --
 ALTER TABLE `parcelas`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `sondas`
+--
+ALTER TABLE `sondas`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_sondas_parcelas` (`parcela`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -262,6 +371,12 @@ ALTER TABLE `parcelas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
+-- AUTO_INCREMENT de la tabla `sondas`
+--
+ALTER TABLE `sondas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -287,7 +402,13 @@ ALTER TABLE `vertices`
 -- Filtros para la tabla `mediciones`
 --
 ALTER TABLE `mediciones`
-  ADD CONSTRAINT `mediciones_ibfk_1` FOREIGN KEY (`id`) REFERENCES `usuarios_parcelas` (`parcela`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `fk_sondas_medicion` FOREIGN KEY (`sonda`) REFERENCES `sondas` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `sondas`
+--
+ALTER TABLE `sondas`
+  ADD CONSTRAINT `fk_sondas_parcelas` FOREIGN KEY (`parcela`) REFERENCES `parcelas` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `usuarios_parcelas`
